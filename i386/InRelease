@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: buster
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Wed, 18 Dec 2019 21:47:53 +0000
+MD5Sum:
+ 6f8f506f16ab2062a6b513a0f0f47bae           293766 Packages
+ 60995f11e0acd227695859432fa2ee25           119288 Packages.gz
+ 7e5ffe73dd65e5499fe50323b433d8ab              186 Release
+ 60995f11e0acd227695859432fa2ee25           119288 Translation-en.gz
+SHA1:
+ 44731b6bdc43d098536aaae318554857db3675d5           293766 Packages
+ 7f02c77ca03a77a3929e9fadc31d679875dc3b8a           119288 Packages.gz
+ a933cd63d9d352f8d44a9e0f1861c7ed13af8e84              186 Release
+ 7f02c77ca03a77a3929e9fadc31d679875dc3b8a           119288 Translation-en.gz
+SHA256:
+ 90eb2cd1b1e1a61f68b224d111347a6b032454258e295f3568b4240a2e6ef025           293766 Packages
+ deddadb302e3dfb2fc14faa98149597c1b39792d7630665e2db547f05437f280           119288 Packages.gz
+ 4f69d50ed525b04f3310a5f3265b6203cb56c0fb5a5ff59cd5c7ddfa1d4b1575              186 Release
+ deddadb302e3dfb2fc14faa98149597c1b39792d7630665e2db547f05437f280           119288 Translation-en.gz
+SHA512:
+ 05bfc5cd9908de13d338f9dedccf02bedc328ac15644899bdedce7607a4c1a7130f1f4ac728cd89f46208c6807546ff5ceee646ae7d4391bde1ba905284ab79a           293766 Packages
+ f1a1cb52d7fb5918dffd5a7a4c6ea09082b21553f6b9de464829645f9fb7fdfa0c8f96e6356e791c83df34fd2ca53148c18429fab81d04f923fd5b05fdc75dcb           119288 Packages.gz
+ e7fdf474a38e6a588ae1c9becd9aee687e4666ae5c87b6254abcfcb6fe61cd7f157cfd1fa3b0debc8c2019de88b246a42d0bf771b1fd770b44f9ccf8231e6c06              186 Release
+ f1a1cb52d7fb5918dffd5a7a4c6ea09082b21553f6b9de464829645f9fb7fdfa0c8f96e6356e791c83df34fd2ca53148c18429fab81d04f923fd5b05fdc75dcb           119288 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl36nooACgkQrYe8en1z
+CB2LzQgAh8tMLdS1Ijty5PC23MD59BLL/DEGs21Qq35wpuiETszaTOajeW5aaecQ
+5xLI03gcBLKrSPFNKoxuY0hkiwSfGKgG99QsA8CLz8esA887haVLnzqq1dpKJUdq
+jCD2JZzbAAjKDz44ZAM3DbqpI2f9Ay/TPmH5u3zxhI+u7zDbRT2IXcR5PEhTkJG1
+vxETbWd7pR5o7mpQam54zFgWjMi5AdTgAuOWDCLKccS7dQaJhv0qfjn+UeKUAgew
+EJsil73MzYaGPrI2DnNzGookT0Z+krUZpU9BaOZR4AfWeDzLTgUyJ1UJlHuYemSJ
+BOGWATJ0q6fo1Eq1Trh1zz0exE9qog==
+=s18P
+-----END PGP SIGNATURE-----

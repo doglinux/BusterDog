@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: buster
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Wed, 18 Dec 2019 21:56:40 +0000
+MD5Sum:
+ 32d6fa1a632794388234e7615914c119           248770 Packages
+ 89edcad2f8b460636ce10289b34d21af           100011 Packages.gz
+ 6ec7bfd832bc73374535541cef5b9f1a              186 Release
+ 89edcad2f8b460636ce10289b34d21af           100011 Translation-en.gz
+SHA1:
+ 09a9926841524afa07ef84f917c98353eb56efc2           248770 Packages
+ 190340944cb08c5d0e39b0edf957227861449986           100011 Packages.gz
+ 5c9684f7b726eab39ee9d03586ba5c60941673df              186 Release
+ 190340944cb08c5d0e39b0edf957227861449986           100011 Translation-en.gz
+SHA256:
+ 7cc29d3f17b9fc86cbd58d6aae49b807debceaffcdf5169626b6cf41ad48da3f           248770 Packages
+ 19b22c0ed169ae917dc5bd92149780bfcb68ddd5002c70aa4dfe8ec7c4cd2676           100011 Packages.gz
+ 5567135ed0dacba565c8d746759e5a2677e5953d6f420fa6817d81edf0dbd705              186 Release
+ 19b22c0ed169ae917dc5bd92149780bfcb68ddd5002c70aa4dfe8ec7c4cd2676           100011 Translation-en.gz
+SHA512:
+ a138f998de011d5f346fa4d6e27323cbaac19973c4bd4fbc2b589786200d9be028473fff6e804a00c0d831fccac1791e94a5b6867e8e79806dca96e6903c2d99           248770 Packages
+ 634f5cc3f3514577490b3be6cc71805e32e1e0b6e505b0c6ed715765132915974a86f5550f1e11965120c01e881889a6ef651c1ae4b9c4e58355ac5374253ccb           100011 Packages.gz
+ 015becca0d5e891f795d2b22ff125bfa2ca353e511cfdffb204abbdc17011630d256576e95b72d94c60645bf295ffb8ff83c78af3ca784dc1feef26f15e14d8e              186 Release
+ 634f5cc3f3514577490b3be6cc71805e32e1e0b6e505b0c6ed715765132915974a86f5550f1e11965120c01e881889a6ef651c1ae4b9c4e58355ac5374253ccb           100011 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl36oJkACgkQrYe8en1z
+CB2fpQf/XQuSGvYI4eSYfSryCymJp244JVMqEaAb1ecBMiqMtvz15mFYqqY8zEVk
+XXqNjbg3GZljT0qvby47OOOdKewjdjupVYQ0x6BIyp1ge37oasUzjHF2PXxmztoW
++ut8Brhlgnok7Qdp9LbLoPzTEJYfNXyQ41YLLc9EOsXhSrQWopX0gDNQFgLHyn6X
+2tuw5Vj4hE6jc7yLBiuSe8W+zOyklmS+SrGfUZDVc9l5JyAfq8mKHEyVhKpMY2iC
+QESrAWEoiTakhmJpxTaE03RNKJndtGCJEN12LNIVbH54w5SiGtcq2hQHW371+HqB
+YFz38ybyCQ1YiIwxwIV4mUYiyXhrLQ==
+=B7yO
+-----END PGP SIGNATURE-----
