@@ -1804,6 +1804,21 @@ SHA256: e4ec19f807ad8697648816ddfb432b37a7f967c7f85d1c1622f6174821cfe95d
 SHA512: 562b444c394144b22cbfce92509718a1c0e69e58b1e13e1b0253f6e01079f66ac8b0c4390fb0d1f8bc2034467831f579086637cf10caf301357ad5c07e20638d
 Description: Peasy Firewall Monitor
 
+Package: sfs-get-smokey-get
+Architecture: all
+Version: 1.0.5-buster
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 224
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Filename: ./sfs-get-smokey-get_1.0.5-buster_all.deb
+Size: 77658
+MD5sum: c5e87b1d956bf3a38ba9c8508dbdaeae
+SHA1: e0ad42ee50e1291cc4f52e159415225b2c06b7aa
+SHA256: c39a219b427d0b9a5f0ff8996cc7aa4cc25fc1ba3853a16ddb657870a2ad279c
+SHA512: bcbf4ce5268ab0ab74c8f8f41d02833ef5d811f99efad987222cebdd20952e29457ec1eca174d38839fb78fb0257fc56e68c2ab1406a52f647f0a572a4e1f864
+Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com
+ sfs-get_smokey-get by MakeDEBPackage-GUI.
+
 Package: peasyscan
 Architecture: amd64
 Version: 2.13-1
