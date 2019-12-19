@@ -2137,6 +2137,7 @@ usr/local/bin/xluncher3					    xlunch
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/xwd					    snappie
 usr/local/bin/yad-splash				    yad-splash
+usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
 usr/local/bin/youtube-get				    youtube-get
@@ -4466,6 +4467,10 @@ usr/local/websearch/help_files/websearch_engines_en.txt	    websearch
 usr/local/websearch/help_files/websearch_engines_fr.txt	    websearch
 usr/local/websearch/restart.sh				    websearch
 usr/local/websearch/websearch				    websearch
+usr/local/yalrm/TickingTimebombBB.ttf			    yalarm
+usr/local/yalrm/alarm_142x164.png			    yalarm
+usr/local/yalrm/current_time.png			    yalarm
+usr/local/yalrm/yalarm					    yalarm
 usr/local/yassm/samba-automount				    yassm-smbclient-mpscan
 usr/local/yassm/samba-login				    yassm-smbclient-mpscan
 usr/local/yassm/samba-login.set				    yassm-smbclient-mpscan
@@ -5155,6 +5160,7 @@ usr/share/applications/Xlunch2.desktop			    xlunch
 usr/share/applications/Xlunch3.desktop			    xlunch
 usr/share/applications/Xlunchlogout.desktop		    xlunch
 usr/share/applications/YRadio.desktop			    yradio
+usr/share/applications/Yalarm Alarm scheduler.desktop	    yalarm
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/abiword-portable.desktop		    abiword-portable
@@ -6087,6 +6093,7 @@ usr/share/flite_hts_engine/hts_voice_cmu_us_arctic_slt-1.05/README flite-hts-eng
 usr/share/flite_hts_engine/hts_voice_cmu_us_arctic_slt-1.05/cmu_us_arctic_slt.htsvoice flite-hts-engine
 usr/share/flite_hts_engine/hts_voice_cmu_us_arctic_slt-1.05/input.txt flite-hts-engine
 usr/share/fonts/CherryCreamSoda.ttf			    frisbee
+usr/share/fonts/TickingTimebombBB.ttf			    yalarm
 usr/share/frisbee/connect				    frisbee
 usr/share/frisbee/disconnect				    frisbee
 usr/share/frisbee/func					    frisbee
@@ -9551,6 +9558,7 @@ usr/share/pixmaps/PackIt.png				    pack-it
 usr/share/pixmaps/QtWeb.png				    qtweb
 usr/share/pixmaps/UExtract.png				    uextract
 usr/share/pixmaps/abiword48.png				    abiword-portable
+usr/share/pixmaps/alarm_142x164.png			    yalarm
 usr/share/pixmaps/alsamixertray.png			    alsamixer-tray
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
