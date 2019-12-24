@@ -3771,6 +3771,22 @@ SHA256: ee2a61f6a6a6ec3687a6fcb6332f1a96265ed83a1202acb32e60c0f5f7516fb8
 SHA512: 96622eb6898ed0e4e3deedcab778841f6f529017293439b0194faf74570823c2d137f20b6a39d6879e02bb5cd2dbb5edfeff04ae09d86db366f49edc2281fdd6
 Description: gtkdialog
 
+Package: yalarm2
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm2_0.0.2_all.deb
+Size: 116070
+MD5sum: c6641928837d0659d4c1836fe1ad0335
+SHA1: dbcbb550406814f9cb3689dae2fd3e3f62366e02
+SHA256: 2f0f7dff3194aa1edd689a963039f4ebd9fbaae90ac4358ba9b8f56461ec2fa2
+SHA512: bb092bdc3a295a0b7f407e74926ecec2b22b2d0c90a79b25feac29d8a9aef77f62cac9d277056c42253dd72a28b497de702c5b6ce4ec374e03a516b092438fcc
+Description: Alarm scheduler v2 by fredx181 and Argolance
+
 Package: gsu
 Architecture: all
 Version: 1.0.5
