@@ -7792,6 +7792,7 @@ usr/share/applications/yarlm-alarm-scheduler.desktop	    yalarm2
 usr/share/applications/yassm.desktop			    yassm
 usr/share/apport/package-hooks/source_synaptic.py	    synaptic
 usr/share/audio/2barks.au				    pburn
+usr/share/audio/2barks.wav				    yalarm2
 usr/share/azpainter/13x13/layer.png			    azpainter
 usr/share/azpainter/16x16/brushedit.png			    azpainter
 usr/share/azpainter/16x16/canvasview.png		    azpainter
