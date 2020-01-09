@@ -1787,6 +1787,21 @@ Description: gethosts script from SteveRiley: https://www.kubuntuforums.net/show
   Thanks to jockjunior: http://www.murga-linux.com/puppy/viewtopic.php?p=899122#899122
  .
 
+Package: yassm
+Architecture: all
+Version: 4.5-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./yassm_4.5-2_all.deb
+Size: 7458
+MD5sum: f0079089c128f423a3c38e759c4724fb
+SHA1: 6fcf318ecf9f80da497861870fc2ca2c70a18437
+SHA256: 74dd6d7f21f7dc1921dcf4aa65351dc6a643be2ea761c51976cf3abd05ccb4b0
+SHA512: 18412b764b02bf8d0b7450d0071b320100c90ab70bcc895b812666aa98a7bd360d1d4d1baec195dc310f769552adefc9f00bab5a6de9f6712d55e9ce0d0c99d3
+Description: Samba share mounter
+
 Package: tzupdate
 Architecture: all
 Version: 1.1.2
