@@ -1996,11 +1996,11 @@ Maintainer: fredx181
 Installed-Size: 2800
 Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
 Filename: ./upgrade-kernel-buster-bpo_1.0.0_all.deb
-Size: 1039192
-MD5sum: 843406e4f769f46044db39e6405b5c0c
-SHA1: 5d617d9bb788917d733255bc802526aa6a522458
-SHA256: 760512e02e4fadbb17aaf02ccb88f06d8007f9b08a796845952405ad830741ee
-SHA512: c71a5857f92c188fec9352da61df3d90a1e5aa3a5cb4957bdcdc13c21762a1322125cad483bf4494a8a0530c019779dddadbf265c545dbfc97542193669e3ac9
+Size: 1038948
+MD5sum: a1c73ed6d64c81c4116d82010d294d7f
+SHA1: e126bf7547ca65220d707045ff8974157d4be558
+SHA256: 4c95a74f4c919dd3a1a85ea94b070c0ac3dce1269760a22bd615db7ec6f6d335
+SHA512: 09a470f1092b8a5b54ba8eea307c7bbc33efa2218f9b23c83779856aebbee2789c737d2f11b50562654cdceec24d977a6e03b2e5cee7d59492b6f905e98e697b
 Description: Install backports kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
 
