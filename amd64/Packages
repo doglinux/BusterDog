@@ -1973,6 +1973,23 @@ Description: Firefox-based, efficient and easy to use web browser
  Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
  that your processor supports it.
 
+Package: upgrade-kernel-buster-bpo
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel-buster-bpo_1.0.0_all.deb
+Size: 1039192
+MD5sum: 843406e4f769f46044db39e6405b5c0c
+SHA1: 5d617d9bb788917d733255bc802526aa6a522458
+SHA256: 760512e02e4fadbb17aaf02ccb88f06d8007f9b08a796845952405ad830741ee
+SHA512: c71a5857f92c188fec9352da61df3d90a1e5aa3a5cb4957bdcdc13c21762a1322125cad483bf4494a8a0530c019779dddadbf265c545dbfc97542193669e3ac9
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: peasyglue
 Architecture: all
 Version: 2.2
@@ -4737,6 +4754,21 @@ SHA1: 286a9d8ae637a11c449f3bb560739c14f7394d47
 SHA256: 89e28c6b5ec3432a62cda954648e84888310c37af9a211f3fbddf06cc6ae8e6c
 SHA512: e95a11a2d6ab0224c8be1e250c90ee5e04223071ee132a67370e3d5eedef7463f282b860434c81675b07e48147ffaaa35fc547a642c51cef1fded5da72f21965
 Description: xhippo-converted-pet-to-deb
+
+Package: flashplayerchoice
+Architecture: amd64
+Version: 1.0.7
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
+Filename: ./flashplayerchoice_1.0.7_amd64.deb
+Size: 5916
+MD5sum: 900222861ce49bb18f4ac3fa9346419a
+SHA1: 0ffb0ec6f5abfa6ee075ebcd4af207b4c823f27c
+SHA256: f839d0da7f2cb5ccb6a091cd8ff193ea287cc030fdcd2c2455274428d1f01a82
+SHA512: 8d13d8a73757b13dc55d1ea1ccbe826dc3f19424207a04aa177ca444fa04769ea08bd6dbcc38087d24852eadf5b14ea6b7a3c8439c712f822481f59d6c4b0b4b
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Latest version from Adobe (= 16 Mb uncompressed)
 
 Package: dogradio
 Architecture: amd64
