@@ -1213,6 +1213,20 @@ Description:
  2019-06-15, fredx181, changes and fixes for 'gtkdialog-splash' script
  2019-07-04, changes and fixes for 'gtkdialog-splash' script
 
+Package: sound-card-selector
+Architecture: all
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./sound-card-selector_1.6_all.deb
+Size: 4150
+MD5sum: 85b97059604808a97600b746a058a020
+SHA1: 7d5e6c2b1369ee2397e79eba3f94dd6a349e3f30
+SHA256: 730da01e8445a6c27779abc2f5dc33363cecbd676b774215881c138ae26c2cc9
+SHA512: d959a15789e2f60c178739347774bbaf7db668444178e3961770a09b4b626741926072fd610c08518cc62952f20c0224b0d222db6b29be85528c8054355ba62c
+Description: Select a sound card and set ALSA defaults
+
 Package: desktop-editor
 Architecture: all
 Version: 1.0
@@ -2744,6 +2758,21 @@ Description: Curses interface to /etc/network/interfaces
  A Curses user interface for configuring network interfaces with ifupdown.
  Ceni can manage basic network interface ifupdown configuration stanzas for
  ethernet and wireless devices.
+
+Package: peasyport
+Architecture: amd64
+Version: 2.8-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./peasyport_2.8-1_amd64.deb
+Size: 11642
+MD5sum: 8681c5ec46d9a5b8da94c067d22f7740
+SHA1: 78c49aa5bfc4c9ab32aad6af5ded07c8e2021d29
+SHA256: b5c081026ffa3246b19db39661395bdfc92398288a6670475f6bd3a99f992ba3
+SHA512: 81c185b5bd8e558e85894d2bdb55fe4ecd75f977c462b7fa131ef0675e4f13a217658c236085fc7448328a84527b680b80b4d17fab22c8ae3b1281964a3c7b6f
+Description: Network port scanner
 
 Package: inxi-gui
 Architecture: all
