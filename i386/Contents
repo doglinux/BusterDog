@@ -5321,6 +5321,7 @@ usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
+usr/share/applications/Make initrd.desktop		    upgrade-kernel
 usr/share/applications/MakeScreenshot.desktop		    scrotdlg
 usr/share/applications/PackIt.desktop			    pack-it
 usr/share/applications/PeasyPDF.desktop			    peasypdf
