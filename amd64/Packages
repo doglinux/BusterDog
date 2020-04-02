@@ -1265,6 +1265,20 @@ SHA256: 730da01e8445a6c27779abc2f5dc33363cecbd676b774215881c138ae26c2cc9
 SHA512: d959a15789e2f60c178739347774bbaf7db668444178e3961770a09b4b626741926072fd610c08518cc62952f20c0224b0d222db6b29be85528c8054355ba62c
 Description: Select a sound card and set ALSA defaults
 
+Package: p910nd-print-server
+Architecture: amd64
+Version: 0.97.3-5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./p910nd-print-server_0.97.3-5_amd64.deb
+Size: 13136
+MD5sum: f5f02f5768853d8e934c30c9150fef6c
+SHA1: 9c6caa9c268bd2f06e7c029cb40eb51bbe7941a6
+SHA256: 336c58a44891a030d85288d8d40245fcf91f285c63e8aa1c9722fa41d1f649ff
+SHA512: 1fab096dcb6faffcc7cc4bc5ef20d2127c9976a1299fd0f41d921e7360b3c2224b1f64b38898b5c5cd8c5566b98fdb325333bcce6822a06d956c54ce4731ab01
+Description: Runs an Appsocket/Jetdirect print server
+
 Package: desktop-editor
 Architecture: all
 Version: 1.0
@@ -5320,6 +5334,21 @@ SHA512: aa331aa124c6cd22c5f4c35400b7605de10332567def704966bb21c4dd0df328b9805735
 Description: The flashplayerchoice script gives choice of several options to install flashplayer :
  - Latest version from Adobe (= 16 Mb uncompressed)
 
+Package: touchpad
+Architecture: all
+Version: 1.9-5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.9-5_all.deb
+Size: 6328
+MD5sum: 732ffa5d37cce4ea3491ff81275102f2
+SHA1: 8729086809945a5505208454fae0ed6efb5da56f
+SHA256: ed4a13bfc0c863f59e3bbeabf8006296a198966bc3bb410d133bc49ae6e2618b
+SHA512: 5eb01dd101ff3bc730aae140d8ea676a993a57a5153698f32d766be9cda986bfc2583a5f666818d2b298c4bbc89dae5ec12c479efa6b43b347f077bda03ca18b
+Description: Touchpad/mouse/touchscreen setup
+
 Package: PeasyWiFi
 Architecture: amd64
 Version: 4.6-3
@@ -6016,6 +6045,29 @@ SHA256: a1239eb81c94bf8cd16e9ee44a2c4a488ff7dae4ec5d0368a223414ab793cee6
 SHA512: 93db2a05a72731cc547590f5cad3324f3e521ddce21bdb41b3b6c166b1039a99876795c56627e4e3ea4019369adfdc0191e833c79eef6e4b9f70671f11b19890
 Description: DVD decryption library
   compiled from source in Stretch-Live-64bit
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.4-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.7.4-0_all.deb
+Size: 366478
+MD5sum: dcf495906d97f248ca104c73ac5e6111
+SHA1: a73cda14cdb02412fe49a658379b652bacb95355
+SHA256: f54756fe8a63d0cbfc77409214f64fcd5f5d5168bc02c765921df381276675c6
+SHA512: 65f4571109b4a54cd84a6ed41dcdff7e31d31d6826c575113cb0597e36eed459afea2145e0070c163aff5a66bb5b6027c501d0cf7c914fbb7b37e61a965ce515
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: elogind
 Architecture: amd64
