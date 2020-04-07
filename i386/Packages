@@ -1318,6 +1318,31 @@ SHA256: b9488c1af57687733395fcf70f18e8270ec207b1dc69e9d2d53f5ced9adb70ad
 SHA512: b1c2a18711c16a28c2acf8ef6717cb8a4fa4d8cb591875d92f19c01acdb7bf1545598ee63f69663d1de4f7e531a58f6842b7525d20c7f05a73c31e4d927e4e06
 Description: Conky-clock, choose analog clock display on the Desktop
 
+Package: libpam-elogind
+Architecture: i386
+Version: 243.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 405
+Provides: default-logind, libpam-systemd, logind
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 243.7-1.0antix1), libpam-runtime
+Conflicts: libpam-ck-connector, libpam-elogind-compat
+Breaks: libpam-elogind-compat, libpam-systemd
+Replaces: libpam-elogind-compat, libpam-systemd
+Filename: ./libpam-elogind_243.7-1.0antix1_i386.deb
+Size: 150856
+MD5sum: 768f5123685506a8c25fdb35e06e760b
+SHA1: 06ee60c19cfe978401cfe6918d1a38090ad21c79
+SHA256: 3e0e989b5841c56db9eee547ba84cf17186d5a25bb8cab1455257c38a36ba8e9
+SHA512: d0d00087eea06c213dee7eb2207312039c147c6817b423bfcc7790a7c46c5633dee990e0a2b6d2daded071bb256577e51d00b085dc1c305d40a3f2d59eb0ec1d
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
+
 Package: elogind
 Architecture: i386
 Version: 241.1-1+debian1
@@ -2140,6 +2165,38 @@ SHA256: 305cc39bf3391ee1eaa4a00a1774db39c0039195ea6b9b7576c3d1436730b753
 SHA512: 39940fdd1e33d0fe2ee805d277e731905fa29a85e8e620522db4120003bdcf70e3273cec3f9289d98df0e994c460bbb26fd81ce4ffffcb53d0bca8e7901cb5cd
 Description: Reports printer ink levels
 
+Package: synaptic
+Architecture: i386
+Version: 0.90+antix3
+Priority: optional
+Section: admin
+Maintainer: Michael Vogt <mvo@debian.org>
+Installed-Size: 7854
+Depends: libapt-inst2.0 (>= 0.8.16~exp12), libapt-pkg5.0 (>= 1.1.9), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.28), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libept1.5.0, libgcc1 (>= 1:4.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgnutls30 (>= 3.6.5), libgtk-3-0 (>= 3.11.7), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpcre2-8-0 (>= 10.32), libstdc++6 (>= 5.2), libvte-2.91-0, libx11-6, libxapian30 (>= 1.4.11~), zlib1g (>= 1:1.1.4), hicolor-icon-theme
+Recommends: libgtk3-perl, xdg-utils
+Suggests: dwww, menu, deborphan, apt-xapian-index, tasksel, software-properties-gtk
+Conflicts: menu (<< 2.1.11)
+Filename: ./synaptic_0.90+antix3_i386.deb
+Size: 2118020
+MD5sum: 95a0ba84242098a31d00f2b454bd119d
+SHA1: dd4c5d3512c2281e43b61eda5d860627c7029284
+SHA256: 3726fd1bec0bdc778223cfe9a5c9d4e10551d0c1decec59c4db027544cbfd032
+SHA512: b0e1180595e95c2d4023167fcb61f11364e030c8e9947f2148a6a44a004aff9f4131bbfa7a055fb50db1bab97a4dbf5bcb9b1426cee6a9c97c5f1a02c12db8aa
+Homepage: https://www.nongnu.org/synaptic/
+Description: Graphical package manager
+ Synaptic is a graphical package management tool based on GTK+ and APT.
+ Synaptic enables you to install, upgrade and remove software packages in
+ a user friendly way.
+ .
+ Besides these basic functions the following features are provided:
+  * Search and filter the list of available packages
+  * Perform smart system upgrades
+  * Fix broken package dependencies
+  * Edit the list of used repositories (sources.list)
+  * Download the latest changelog of a package
+  * Configure packages through the debconf system
+  * Browse all available documentation related to a package (dwww is required)
+
 Package: libevent-2.0-5
 Architecture: i386
 Version: 2.0.21-stable-3
@@ -2545,6 +2602,30 @@ Description: GTK+2 based text/hex editor
  MadEdit supports many useful functions, e.g. SyntaxHighlightings,
  WordWrap, Encodings, Column/Hex Modes.
  HomePage: http://madedit.sourceforge.net
+
+Package: elogind
+Architecture: i386
+Version: 243.7-1.0antix1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 2125
+Pre-Depends: debconf
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.28), libcap2 (>= 1:2.10), libselinux1 (>= 2.0.65), libudev1, libelogind0 (= 243.7-1.0antix1), lsb-base (>= 3.1), dbus (>= 1.9.14)
+Recommends: libpam-elogind, policykit-1
+Conflicts: systemd
+Filename: ./elogind_243.7-1.0antix1_i386.deb
+Size: 596948
+MD5sum: fd379c2a39f61bda5a90381f4ced2b20
+SHA1: bc9db0953391a05c9c003ba4cc72a9f4aa9b0d62
+SHA256: 0d08bdab932ef0cfa632941d12605bd2e49892945c3dc2d6f36a8ad5b51207a0
+SHA512: a9ac6a82619d10d10370810d98c2ee877ff1cc1911d88863df68fc70be04af9026b43ce8b1a05a23983a4a62a37327a1399957c2193b2174f8a7daa0fde810fe
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ "logind"
 
 Package: findnrun-doc
 Architecture: all
@@ -3903,6 +3984,29 @@ Description: Small audio and MIDI framework from OpenBSD, runtime libraries
  volume control, software mixing, and network transparency.
  .
  This package contains the sndio userspace libraries.
+
+Package: libeudev1
+Architecture: i386
+Version: 232:3.2.9.1
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: eudev
+Maintainer: Svante Signell <svante.signell@gmail.com>
+Installed-Size: 230
+Provides: libudev1 (= 232:232:3.2.9.1)
+Depends: libc6 (>= 2.17), libselinux1 (>= 2.1.9)
+Conflicts: libudev1 (<< 232:232:3.2.9.1)
+Replaces: libudev1 (<< 232:232:3.2.9.1)
+Filename: ./libeudev1_232%3a3.2.9.1_i386.deb
+Size: 102144
+MD5sum: 4d9256bfbbd1467231a73fd7a5f09945
+SHA1: 5fce131d840d4394af6b8e1bae9c42542e39d022
+SHA256: 9aef304f607e1832c84d4c014adafb87c64dea453a9b349c6cb386f59ac9cddb
+SHA512: dc09516cf9d2227e7e2ae9c2c7a134d22a48ffd23b3cd54a0df02c1324c438bfa8d45d5164b870579669a3ef5209194ebbce787f8a40056f03586866fdaba218
+Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
+Description: libeudev shared library
+ This library provides access to eudev device information.
 
 Package: peasyport
 Architecture: all
@@ -6050,6 +6154,59 @@ Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: eudev
+Architecture: i386
+Version: 232:3.2.9.1
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Svante Signell <svante.signell@gmail.com>
+Installed-Size: 7972
+Provides: udev (= 232:232:3.2.9.1)
+Pre-Depends: debconf
+Depends: libblkid1 (>= 2.25), libc6 (>= 2.28), libkmod2 (>= 5~), libselinux1 (>= 2.1.9), adduser, libeudev1 (= 232:3.2.9.1), lsb-base (>= 3.0-6), util-linux (>= 2.27.1), procps
+Conflicts: hal, udev (<< 232:232:3.2.9.1)
+Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (>> 220)
+Replaces: bash-completion (<< 1:2.1), udev (>= 232)
+Filename: ./eudev_232%3a3.2.9.1_i386.deb
+Size: 1079020
+MD5sum: d6a57d696398ed838e209adf89ed9886
+SHA1: 0172aed101adb60df0445d112c175add71b33037
+SHA256: d9216707732618d8398d1c41f7129cfe9e11c4e4400d73d18778d65a6f64ca89
+SHA512: 9c49fc505ddb16160f788cd79a12321d3c4ef69a835ed6ca413c9a0791f8b3aaef55d03e309406d9ff88f4daf029c5f9f0c998daebe8c13a198b6015ab1f4e2b
+Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
+Description: /dev/ and hotplug management daemon
+ eudev is a daemon which dynamically creates and removes device nodes from
+ /dev/, handles hotplug events and loads drivers at boot time.
+
+Package: libelogind0
+Architecture: i386
+Version: 243.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 715
+Provides: libsystemd0 (= 243.7)
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10)
+Conflicts: libsystemd0
+Replaces: libsystemd0
+Filename: ./libelogind0_243.7-1.0antix1_i386.deb
+Size: 244236
+MD5sum: ef412ff82bcd945550639d66ff7d1177
+SHA1: 7bf4fc1431dba730dfb1c607a2d1d14ace7e5c7c
+SHA256: a2b0dbc65c620d6b6808de6113d71dabbccdc990b9ea8c30f5ed45ac782ba27b
+SHA512: 06588433cb162c35a7a93ddb4687302ff2686bc6306e99db8a2dc60b1a3314fbd29a3ab82b90fc73bbdb00fc124b07d834f87ce65ad77681dc70267b2abb8e44
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+ .
+ The library is ABI compatible with libsystemd0 and provides the necessary
+ symlinks to allow binaries linked against libsystemd0 to work with
+ libelogind0. For full details of the compatibility see README.Debian.
 
 Package: libssl1.0.2
 Architecture: i386
