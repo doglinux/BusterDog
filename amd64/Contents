@@ -161,6 +161,7 @@ lib/elogind/elogind-cgroups-agent			    elogind
 lib/elogind/elogind-uaccess-command			    elogind
 lib/elogind/libelogind-shared-241.1.so			    elogind
 lib/elogind/libelogind-shared-241.3.so			    elogind
+lib/elogind/libelogind-shared-243.7.so			    elogind
 lib/elogind/system-shutdown/.keep_dir			    elogind
 lib/elogind/system-sleep/.keep_dir			    elogind
 lib/modprobe.d/fbdev-blacklist.conf			    eudev
@@ -4586,6 +4587,7 @@ usr/lib/x86_64-linux-gnu/libdirectfb-1.2.so.9		    libdirectfb-1.2-9
 usr/lib/x86_64-linux-gnu/libdirectfb-1.2.so.9.0.1	    libdirectfb-1.2-9
 usr/lib/x86_64-linux-gnu/libelogind.so.0		    libelogind0
 usr/lib/x86_64-linux-gnu/libelogind.so.0.25.0		    libelogind0
+usr/lib/x86_64-linux-gnu/libelogind.so.0.27.0		    libelogind0
 usr/lib/x86_64-linux-gnu/libesd.so.0			    libesd0
 usr/lib/x86_64-linux-gnu/libesd.so.0.2.39		    libesd0
 usr/lib/x86_64-linux-gnu/libevent-2.0.so.5		    libevent-2.0-5
@@ -8530,6 +8532,7 @@ usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
 usr/share/doc/elogind/NEWS.gz				    elogind
 usr/share/doc/elogind/README.gz				    elogind
+usr/share/doc/elogind/README.md.gz			    elogind
 usr/share/doc/elogind/changelog.Debian.gz		    elogind
 usr/share/doc/elogind/copyright				    elogind
 usr/share/doc/emelfm2/ACTIONS				    emelfm2
@@ -8692,6 +8695,7 @@ usr/share/doc/libdirectfb-1.2-9/README.screenshots	    libdirectfb-1.2-9
 usr/share/doc/libdirectfb-1.2-9/changelog.Debian.gz	    libdirectfb-1.2-9
 usr/share/doc/libdirectfb-1.2-9/changelog.gz		    libdirectfb-1.2-9
 usr/share/doc/libdirectfb-1.2-9/copyright		    libdirectfb-1.2-9
+usr/share/doc/libelogind0/README.Debian			    libelogind0
 usr/share/doc/libelogind0/changelog.Debian.gz		    libelogind0
 usr/share/doc/libelogind0/copyright			    libelogind0
 usr/share/doc/libesd0					    libesd0

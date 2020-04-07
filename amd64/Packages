@@ -627,6 +627,34 @@ SHA512: 5f1cedd779b253796f700dba476e95aab468b56f9c5093b9fdc5b28577acfd72e260215d
 Description: domycommand version for DebianDog:
  domycommand by mcewanw
 
+Package: libelogind0
+Architecture: amd64
+Version: 243.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 632
+Provides: libsystemd0 (= 243.7)
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10)
+Conflicts: libsystemd0
+Replaces: libsystemd0
+Filename: ./libelogind0_243.7-1.0antix1_amd64.deb
+Size: 228292
+MD5sum: e0f9660fe1f2450c9de42991f97f9ac2
+SHA1: 4feeb95063302381ecec0b3acec23b6d007a72f7
+SHA256: 9cc7ace2289b842b0b729daa02da74f304312e1af8aa1eb6381f987e65e42518
+SHA512: 05e005b5776e8a101a3c826ef7f7ff35d2ff9b4b9c62e36ef429cd9a20b9d24cafd4584312d61bda5189a27640b0571d6fe165df664c2c057199707a598becf9
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+ .
+ The library is ABI compatible with libsystemd0 and provides the necessary
+ symlinks to allow binaries linked against libsystemd0 to work with
+ libelogind0. For full details of the compatibility see README.Debian.
+
 Package: create-portable
 Architecture: amd64
 Version: 1.0.2
@@ -1457,31 +1485,6 @@ SHA512: 7f2feaa0df1051095fa6f8a2f08af92da6ec814cb75108e8aa8e2ccf1adc90cc4447fc48
 Description: Mount .squashfs as unprivileged user.
  Squashfuse lets you mount SquashFS archives in user-space
 
-Package: eudev
-Architecture: amd64
-Version: 232:3.2.9.1
-Multi-Arch: foreign
-Priority: important
-Section: admin
-Maintainer: Svante Signell <svante.signell@gmail.com>
-Installed-Size: 7900
-Provides: udev (= 232:232:3.2.9.1)
-Pre-Depends: debconf
-Depends: libblkid1 (>= 2.25), libc6 (>= 2.17), libkmod2 (>= 5~), libselinux1 (>= 2.1.9), adduser, libeudev1 (= 232:3.2.9.1), lsb-base (>= 3.0-6), util-linux (>= 2.27.1), procps
-Conflicts: hal, udev (<< 232:232:3.2.9.1)
-Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (>> 220)
-Replaces: bash-completion (<< 1:2.1), udev (>= 232)
-Filename: ./eudev_232%3a3.2.9.1_amd64.deb
-Size: 1067776
-MD5sum: cb32327401953ef9a7c4d631790b9b0b
-SHA1: c04decc1c7b0be178a9a812a9df5715dae2e58d3
-SHA256: 581ecfb85ba4d575b52b9a17d82d9bd7ce60abddbb1909e5f8c1239eba5b7b98
-SHA512: 0cb08a81bb9b396d0cd507b0abc6f6611810ba18633ca00fb47b3e99f2b73649c43dd49783f9807289e4d27b8820eb03dfe85635e9d1598bf6ed03229538d2d0
-Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
-Description: /dev/ and hotplug management daemon
- eudev is a daemon which dynamically creates and removes device nodes from
- /dev/, handles hotplug events and loads drivers at boot time.
-
 Package: gifenc
 Architecture: all
 Version: 1.0.2
@@ -2208,6 +2211,29 @@ SHA1: 5447ccb2081f1653a7e5ba3c558f2afc20d2680f
 SHA256: a85f617aae83c2903bea6b7c811e915ed2eb7bd5a1a8fa095dbb8c5d401340bd
 SHA512: 12785dbd777215b3c14efba50222cfd94c1cd5ece14cf51261ec91c33be3844f8aa949fce250bfefd9b8e18aa7bc407086fe6f5a22dbf1fb3e737f83d9976c97
 Description: graphic-utility
+
+Package: libpam-elogind
+Architecture: amd64
+Version: 243.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 358
+Provides: logind
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (>= 241.3-2+antix1), libpam-runtime
+Conflicts: libpam-ck-connector, logind
+Replaces: logind
+Filename: ./libpam-elogind_243.7-1.0antix1_amd64.deb
+Size: 140690
+MD5sum: 748e8cbbe147af8be57b5e5a90df9900
+SHA1: 8140fe7da477e0ba2bcf178c066c3a0e2623ad72
+SHA256: 7bc1d614aa46bda439627a8f4d8ef30dc2fafe6c4d7d107f088f55c78ddb2191
+SHA512: be02f3b11ce5da79cbf777aa84dbe188679e1b6de9cc3ec6877eb3a8bef3786e258aabf810505af0de6b9f0c76059912450b18f81a52db0c29d8206ce87f3fd9
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
 
 Package: peasypdf
 Architecture: all
@@ -3630,29 +3656,6 @@ SHA1: 91f747c2d32efb6bdd62c26c8b05c161199c5a87
 SHA256: 03ceb7fdc978b2985cf3004d9f1c342b42b579fbb0225635310c259d02325e5f
 SHA512: e238573bce0d5950eb998a1304e19dc8444718fb90e093e898fad68040ae85fb9974318d040bc147ed06acfb8f7deb67399cd652312988f3b258f6bfce64eb5f
 Description: DebianDog deb + dependencies install utility from Fredx181
-
-Package: libeudev1
-Architecture: amd64
-Version: 232:3.2.9.1
-Multi-Arch: same
-Priority: important
-Section: libs
-Source: eudev
-Maintainer: Svante Signell <svante.signell@gmail.com>
-Installed-Size: 211
-Provides: libudev1 (= 232:232:3.2.9.1)
-Depends: libc6 (>= 2.17), libselinux1 (>= 2.1.9)
-Conflicts: libudev1 (<< 232:232:3.2.9.1)
-Replaces: libudev1 (<< 232:232:3.2.9.1)
-Filename: ./libeudev1_232%3a3.2.9.1_amd64.deb
-Size: 94732
-MD5sum: 344aec74fb8e54aef792ba4cab3752da
-SHA1: 19d8cdbb5892e18c999fb01d0de05b76da404566
-SHA256: 7acc0141078dbc40a6b201d46a1875b3cbfa4f0145e31b155b493e9f1a7a72d6
-SHA512: 2ae243b997be0bbe58159f44bfb8f93b69426d7521f10d32db939551d76ffd8da217da1419e9cc31796de93ea225e0d8d0f9616fbb6edee36006ddef8c0d7c4d
-Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
-Description: libeudev shared library
- This library provides access to eudev device information.
 
 Package: alsamixer-tray
 Architecture: amd64
@@ -5672,6 +5675,30 @@ SHA1: 6e0c362eb42034ca3774e09b4808b21827bb79c1
 SHA256: 1d1474f39e1a8b763e7116a5cd1a535367bedbfa772829a92edc9f2b51f1780d
 SHA512: 08e4b487733c13d0400b9e98346d98939cc65a36c668aea83984231bfe1c17414a1cbab9a0ddae6522787f563703f9833685c2fdf167d4e08d4614032efd03e4
 Description: Run application as unprivileged user (from root account)
+
+Package: elogind
+Architecture: amd64
+Version: 243.7-1.0antix1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 1978
+Pre-Depends: debconf
+Depends: libacl1 (>= 2.2.23), libaudit1 (>= 1:2.2.1), libc6 (>= 2.28), libcap2 (>= 1:2.10), libselinux1 (>= 2.0.65), libudev1, libelogind0 (= 243.7-1.0antix1), lsb-base (>= 3.1), dbus (>= 1.9.14)
+Recommends: libpam-elogind, policykit-1
+Conflicts: systemd
+Filename: ./elogind_243.7-1.0antix1_amd64.deb
+Size: 570408
+MD5sum: bdc3bfe921d1a828fcba403a747725d2
+SHA1: fdf5546dfedf4be4164e6442c799a52294eebd57
+SHA256: fc3dc84784f3c1d3fc6e0dd17e33f6d4894fd100480e3e27944ed3341316f585
+SHA512: 5a62fe18b9beda09f7a0c16524f233eefe74866125237e4c546c9c85ee3e6ad130aa09c1e3708de3e2fc2e751794140de1b9c7fdd172aeabd59695687568d39f
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ "logind"
 
 Package: openbox-keybinder
 Architecture: amd64
