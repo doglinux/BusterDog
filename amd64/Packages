@@ -627,34 +627,6 @@ SHA512: 5f1cedd779b253796f700dba476e95aab468b56f9c5093b9fdc5b28577acfd72e260215d
 Description: domycommand version for DebianDog:
  domycommand by mcewanw
 
-Package: libelogind0
-Architecture: amd64
-Version: 243.7-1.0antix1
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: elogind
-Origin: Devuan
-Maintainer: Mark Hindley <mark@hindley.org.uk>
-Installed-Size: 632
-Provides: libsystemd0 (= 243.7)
-Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10)
-Conflicts: libsystemd0
-Replaces: libsystemd0
-Filename: ./libelogind0_243.7-1.0antix1_amd64.deb
-Size: 228292
-MD5sum: e0f9660fe1f2450c9de42991f97f9ac2
-SHA1: 4feeb95063302381ecec0b3acec23b6d007a72f7
-SHA256: 9cc7ace2289b842b0b729daa02da74f304312e1af8aa1eb6381f987e65e42518
-SHA512: 05e005b5776e8a101a3c826ef7f7ff35d2ff9b4b9c62e36ef429cd9a20b9d24cafd4584312d61bda5189a27640b0571d6fe165df664c2c057199707a598becf9
-Homepage: https://github.com/elogind/elogind
-Description: user, seat and session management library
- This library provides runtime access to elogind session management.
- .
- The library is ABI compatible with libsystemd0 and provides the necessary
- symlinks to allow binaries linked against libsystemd0 to work with
- libelogind0. For full details of the compatibility see README.Debian.
-
 Package: create-portable
 Architecture: amd64
 Version: 1.0.2
@@ -2236,31 +2208,6 @@ SHA1: 5447ccb2081f1653a7e5ba3c558f2afc20d2680f
 SHA256: a85f617aae83c2903bea6b7c811e915ed2eb7bd5a1a8fa095dbb8c5d401340bd
 SHA512: 12785dbd777215b3c14efba50222cfd94c1cd5ece14cf51261ec91c33be3844f8aa949fce250bfefd9b8e18aa7bc407086fe6f5a22dbf1fb3e737f83d9976c97
 Description: graphic-utility
-
-Package: libpam-elogind
-Architecture: amd64
-Version: 243.7-1.0antix1
-Multi-Arch: same
-Priority: optional
-Section: admin
-Source: elogind
-Origin: Devuan
-Maintainer: Mark Hindley <mark@hindley.org.uk>
-Installed-Size: 366
-Provides: default-logind, libpam-systemd, logind
-Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 243.7-1.0antix1), libpam-runtime
-Conflicts: libpam-ck-connector, libpam-elogind-compat
-Breaks: libpam-elogind-compat, libpam-systemd
-Replaces: libpam-elogind-compat, libpam-systemd
-Filename: ./libpam-elogind_243.7-1.0antix1_amd64.deb
-Size: 140600
-MD5sum: 604ac86c2df1082d7df0e05496bd0122
-SHA1: b28fed53c7423f2655b7084154e8365f1d6f0772
-SHA256: 42069c2baf50c60757cdda4d66de0b8a6208d69792f9f7ad2ab826d39fe1c095
-SHA512: 9bee3f4f7ddbdb5b762e60a393cfbe030d364a70bb8d0c603bbb345a6ba10419e55254266f5ba9401a2fbd32c08ce2bca1575eb2b9c07b68296a2085d7e15dd5
-Homepage: https://github.com/elogind/elogind
-Description: elogind PAM module
- Plugable Authentication Module to register a session with elogind
 
 Package: peasypdf
 Architecture: all
@@ -5725,30 +5672,6 @@ SHA1: 6e0c362eb42034ca3774e09b4808b21827bb79c1
 SHA256: 1d1474f39e1a8b763e7116a5cd1a535367bedbfa772829a92edc9f2b51f1780d
 SHA512: 08e4b487733c13d0400b9e98346d98939cc65a36c668aea83984231bfe1c17414a1cbab9a0ddae6522787f563703f9833685c2fdf167d4e08d4614032efd03e4
 Description: Run application as unprivileged user (from root account)
-
-Package: elogind
-Architecture: amd64
-Version: 243.7-1.0antix1
-Multi-Arch: foreign
-Priority: optional
-Section: admin
-Origin: Devuan
-Maintainer: Mark Hindley <mark@hindley.org.uk>
-Installed-Size: 1978
-Pre-Depends: debconf
-Depends: libacl1 (>= 2.2.23), libaudit1 (>= 1:2.2.1), libc6 (>= 2.28), libcap2 (>= 1:2.10), libselinux1 (>= 2.0.65), libudev1, libelogind0 (= 243.7-1.0antix1), lsb-base (>= 3.1), dbus (>= 1.9.14)
-Recommends: libpam-elogind, policykit-1
-Conflicts: systemd
-Filename: ./elogind_243.7-1.0antix1_amd64.deb
-Size: 570408
-MD5sum: bdc3bfe921d1a828fcba403a747725d2
-SHA1: fdf5546dfedf4be4164e6442c799a52294eebd57
-SHA256: fc3dc84784f3c1d3fc6e0dd17e33f6d4894fd100480e3e27944ed3341316f585
-SHA512: 5a62fe18b9beda09f7a0c16524f233eefe74866125237e4c546c9c85ee3e6ad130aa09c1e3708de3e2fc2e751794140de1b9c7fdd172aeabd59695687568d39f
-Homepage: https://github.com/elogind/elogind
-Description: user, seat and session management daemon
- elogind is a session management daemon extracted from systemd project's
- "logind"
 
 Package: openbox-keybinder
 Architecture: amd64
