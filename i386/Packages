@@ -1325,20 +1325,18 @@ Multi-Arch: same
 Priority: optional
 Section: admin
 Source: elogind
-Origin: Devuan
 Maintainer: Mark Hindley <mark@hindley.org.uk>
-Installed-Size: 405
-Provides: default-logind, libpam-systemd, logind
-Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 243.7-1.0antix1), libpam-runtime
-Conflicts: libpam-ck-connector
-Breaks: libpam-systemd
-Replaces: libpam-systemd
+Installed-Size: 397
+Provides: logind
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (>= 241.3-2+antix1), libpam-runtime
+Conflicts: libpam-ck-connector, logind
+Replaces: logind
 Filename: ./libpam-elogind_243.7-1.0antix1_i386.deb
-Size: 150802
-MD5sum: 51842de83bd676fe9d6fd29b1c22416b
-SHA1: 0ba439a6bb038a6ff0ceb78e15f861a98657c9f8
-SHA256: d9a5553c4d851a148dc515ca06ceee87c077892a10d8bc9d93553b4994899591
-SHA512: fb9006d5885dab10593ab2cef0d3eeac141be99e16d6708073cc555b2c06ecccb23fb4d134ee7660e99fb487a0f72d3ff27d17eead0ad36c5d26ff39446f7b0d
+Size: 150888
+MD5sum: 1925bd3b474bf7ae9ee3351809df40a3
+SHA1: c2e316bed2e937c87080961a237424758a2fa4ea
+SHA256: cc91c59566d998d64635a83ddf98e394c50ac402cf9d985772181114cf2d45fb
+SHA512: 1a1b35b82651b424c69673171e8cda4c0f2fbce7f9cfda66cf58ff54bae63df24f14e5fca5850c26ff2d0690b059894c0944be05299db688cc891ad7e34afc13
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
