@@ -1318,31 +1318,6 @@ SHA256: b9488c1af57687733395fcf70f18e8270ec207b1dc69e9d2d53f5ced9adb70ad
 SHA512: b1c2a18711c16a28c2acf8ef6717cb8a4fa4d8cb591875d92f19c01acdb7bf1545598ee63f69663d1de4f7e531a58f6842b7525d20c7f05a73c31e4d927e4e06
 Description: Conky-clock, choose analog clock display on the Desktop
 
-Package: libpam-elogind
-Architecture: i386
-Version: 243.7-1.0antix1
-Multi-Arch: same
-Priority: optional
-Section: admin
-Source: elogind
-Origin: Devuan
-Maintainer: Mark Hindley <mark@hindley.org.uk>
-Installed-Size: 405
-Provides: default-logind, libpam-systemd, logind
-Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 243.7-1.0antix1), libpam-runtime
-Conflicts: libpam-ck-connector, libpam-elogind-compat
-Breaks: libpam-elogind-compat, libpam-systemd
-Replaces: libpam-elogind-compat, libpam-systemd
-Filename: ./libpam-elogind_243.7-1.0antix1_i386.deb
-Size: 150856
-MD5sum: 768f5123685506a8c25fdb35e06e760b
-SHA1: 06ee60c19cfe978401cfe6918d1a38090ad21c79
-SHA256: 3e0e989b5841c56db9eee547ba84cf17186d5a25bb8cab1455257c38a36ba8e9
-SHA512: d0d00087eea06c213dee7eb2207312039c147c6817b423bfcc7790a7c46c5633dee990e0a2b6d2daded071bb256577e51d00b085dc1c305d40a3f2d59eb0ec1d
-Homepage: https://github.com/elogind/elogind
-Description: elogind PAM module
- Plugable Authentication Module to register a session with elogind
-
 Package: elogind
 Architecture: i386
 Version: 241.1-1+debian1
