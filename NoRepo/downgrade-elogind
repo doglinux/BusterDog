@@ -1,0 +1,1 @@
+apt install libelogind0=241.3-2+antix1 elogind=241.3-2+antix1 libpam-elogind=241.3-2+antix1
