@@ -9,35 +9,35 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Mon, 27 Apr 2020 11:58:21 +0000
+Date: Sat, 02 May 2020 05:07:01 +0000
 MD5Sum:
- fc58ef00afade94d738d7f8fcc8cbdc8           282858 Packages
- 82f73534c6f7b688e1519455b4227488           112019 Packages.gz
- a27b846ba7ffcff2636b55159183d52a              186 Release
- 82f73534c6f7b688e1519455b4227488           112019 Translation-en.gz
+ b09dedf17f5c29d0f78770f7406c56bf           283453 Packages
+ ba2c197139613bc0fc47f68f1edc485a           112246 Packages.gz
+ 7efaf8f0ebd6c9bb1ccdbddaff9b6778              186 Release
+ ba2c197139613bc0fc47f68f1edc485a           112246 Translation-en.gz
 SHA1:
- 64d36783231607830fc94e2a189af05d191146d3           282858 Packages
- 63207c1976b3fd8604c8eed3162ca8488e6531f3           112019 Packages.gz
- 21f767ad197ed4744ad33109e7b3e4e97741b957              186 Release
- 63207c1976b3fd8604c8eed3162ca8488e6531f3           112019 Translation-en.gz
+ dc518af674e7ed4878dd7a6faa50a43b2a7106ef           283453 Packages
+ 31a322d08adc17240118cfbefa93fa02ede4086a           112246 Packages.gz
+ d8d7cdb30e26566f8122643a2fde2a5350b20e1b              186 Release
+ 31a322d08adc17240118cfbefa93fa02ede4086a           112246 Translation-en.gz
 SHA256:
- b3775ab393c6cfc1785cc3477243a910e91ee7c26cc62e1a0db53fd3bdca59f9           282858 Packages
- 514f06cc0d8fc681a8c00d85bd3c82d6cfe9ae1f6fa2bdc91aa291fcb8e795be           112019 Packages.gz
- ae6cb5eecbf73117ada56ef2bb378b046a74a33f55a39d8fb9880aef42b07197              186 Release
- 514f06cc0d8fc681a8c00d85bd3c82d6cfe9ae1f6fa2bdc91aa291fcb8e795be           112019 Translation-en.gz
+ 55caed109c5451edf2a0c78d467ed67b964afbac0b84685df0c7b6a147efe162           283453 Packages
+ 5398b1203d828c276150c1b4e5d2cf0760a2f31cddd7a6a4fbd3d421d41534be           112246 Packages.gz
+ 36448208fdb72a60cc611117061f83a8936709a7b9a5064cc8630d555fd2ddf0              186 Release
+ 5398b1203d828c276150c1b4e5d2cf0760a2f31cddd7a6a4fbd3d421d41534be           112246 Translation-en.gz
 SHA512:
- b81f24b8fcecdbf54dceed54b6282a2162c7d055ce33b9f308834fe559f663fe39cee7b3820ff827c5cb5e938cc963bc4cdc3090f9d7a670880c88b9cda7a78a           282858 Packages
- 691d3400d1fbfc05e07be2ca0ec2c7560cdc9183b72f40fd7945aa5e11c7e0878d34137308d0fbe18568e39ce165328c36ee409b96b1b9253b82cdfa20bfb6e0           112019 Packages.gz
- d432e4a145d82906161947245aedb348ed40137e7eacae0bd8b3d0ee0514294e7e158cd2cbbb7b267ae2fb9a95be2f853ce1c3fcb510ef64c5e45946c1ebaf5b              186 Release
- 691d3400d1fbfc05e07be2ca0ec2c7560cdc9183b72f40fd7945aa5e11c7e0878d34137308d0fbe18568e39ce165328c36ee409b96b1b9253b82cdfa20bfb6e0           112019 Translation-en.gz
+ ffa6229625176c5178318a03a55d1049c98a71c4c2f7e8bf261c66da9befeaf482b6a42646366f9798db9cd2541ff938dea1f9eee967c3a38e6216f2f21c655b           283453 Packages
+ 3beb0f1691fda32d5642fcf8dae9cd1b7776ca26f98ab01eb7f3901ce90003e492332f36d2df930eb9c38cafeaf100d3108dc9c4dc149643c793bbd0fcea6baf           112246 Packages.gz
+ 113e446aaad131ffa646253b6bfd23b3dc300fbbd3e91d2578f6ffc54bfb776bbdd49d92313b520ab06b2d4edb17733c3002beffcaffca5534a4b3d0aef5f16c              186 Release
+ 3beb0f1691fda32d5642fcf8dae9cd1b7776ca26f98ab01eb7f3901ce90003e492332f36d2df930eb9c38cafeaf100d3108dc9c4dc149643c793bbd0fcea6baf           112246 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl6myN4ACgkQrYe8en1z
-CB0twggAl4GsktvD+jyHiV5SmRej8gBsyzaYoYPdPgBgE2CJ5xbp2B+c11Ld9Db7
-6bE3f2KtDnlmzOKtk7/AusVD9ovsHhPR4NDeagX8LOueDODrY+K9ai+Ua80PZTZM
-/u66MRXn0k7PMeqWdEGuRCpbTXOofqi3+KpNclLBU/UTQ+r2ZtLsMze1H0YApV8F
-Cpl3droLvWn0rsjqmkPpXGkdlH7CkF3el9qO7heOeXpRLDoAVWmd91XwMvUATrP3
-NrSGfHOQNv+CNaxDneH+2mjCsM/zgKraV2T7vGitogsiNuFKPxCsfq6W9DPC/ga7
-NeE3ugOH/0WtvDCLHMZ1+xmr2xeOiQ==
-=UNHA
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl6s//YACgkQrYe8en1z
+CB0vEQf9FfwTa9GTgvbftKw8QsVaeZ8KzXSCJGIfQsg8msbIswaF/lZ2STYejDZP
+Qbhppg9Bu+3Deiam0QFWF2szVbrGVMa1tWfLxcc+gVAKAWVzU1j1im0AKee0LE4c
+l8BH7i+Wez4eIlH8ASAZwNpLKrJ7FyzYBnpK6Eov56YXQOWTLu0kwbQ3n9dsnMsY
+ZXWQ7SYDpg6kNoal/TBYvdWRjcztZgMXd4C8tS1TWdLeFIIrzFNsrKHaHb6o1qTM
+iu3Izd4iJzC1ovYZSexFRoWS5Yz2VOWaPOjEf5r0AoJzfQYPoN0jlzj4CrA7wj0n
+6m7kOSx5xjGAJKpsrFzgdtJ5SUR6xw==
+=p7Ze
 -----END PGP SIGNATURE-----
