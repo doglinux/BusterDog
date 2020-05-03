@@ -1655,14 +1655,14 @@ Source: elogind
 Origin: Devuan
 Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 145
-Depends: libelogind0 (= 243.7-1.0antix1)
+Depends: libelogind0
 Suggests: libelogind-dev-doc
 Filename: ./libelogind-dev_243.7-1.0antix1_amd64.deb
-Size: 24408
-MD5sum: b5d6ce2f445feb24bd8aefa0fde055ab
-SHA1: d0eafd7c95ef17f9e2830e332d3ace90fada09f6
-SHA256: 1327197459d543a146ddd1122e022bdec061354cf2e464e566c06065302c961b
-SHA512: 2fe95fd1a317c5a9fde44cd8f202eae1bc5f5728dfb1fb952bb6ef38d2f636cda9660593dcf1da025af9a7dd73fe17232d3261a08cf3efec7aef821bbfe1435e
+Size: 24426
+MD5sum: 5f35b82b629e5280a1b77a12409fcb40
+SHA1: bd392de9d3806a4d8afe05e8e29620a9b9d81e06
+SHA256: 3c49e05bc9f74530260af45b617bfbb0e6a306018ea093e0a70c993b997c7033
+SHA512: 5788fed8c34ebd64c739095a569e9059c3a52c29271b8290bed7385b1044ba1b797efc0350886e658968b3c63e99af55ba20b5a4a408eb9970759e04a92b1a85
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library (development files)
  This package contains the files needed for developing applications that
