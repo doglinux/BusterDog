@@ -2006,6 +2006,23 @@ SHA256: e23842500caacff5a7e3ded38eee86f79612d3f3fdcaa49400a0a955e58b886c
 SHA512: 1ede86db401471ef9a6cbdc1819849bedb5ac8fda1bfb36809e987f6c8259f51eb4e5ebf6d11673e27ec9fb37e8412715a6839d01fbac47b38a74a541752df96
 Description: pequalizer by 01micko
 
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, live-boot, live-tools
+Filename: ./upgrade-kernel_1.0.2_all.deb
+Size: 1037832
+MD5sum: d5a1ca2c3754eaf879e03c65ca18124b
+SHA1: 83ca32e82c712953c2544a404b0821c2cefc8c13
+SHA256: f172edcfe66d323500a06799dad671039799e3fa2c8beae8722c4823beb0d1e5
+SHA512: e7b484218da797ea776e45d3c239f2a82ee68ecf0699b40ae85ea5deeee9e37f6130df165099706e3df868e61ea55faf09f8513d696dc17bc3023b9ca94cf8e9
+Description: Install kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: emelfm2
 Architecture: amd64
 Version: 0.9.1-1~trusty~ppa1
@@ -4002,6 +4019,23 @@ SHA1: 548f6c0f19a17e8253fcb261c53390aa1fe32cd8
 SHA256: 416634c29f4bc52ea032b939bead1ed828cdda99a629ddb1d1c4875dec6930f5
 SHA512: f9cf6457bc53eda8aad77811edb484d2850ebdcbbc5a5fdbcb8ae9916ce7a85c7805738bfdbcba379d6cc20881665574943a0af67ef2829e290c25a05878bb0f
 Description: Google-drive Filemanager
+
+Package: upgrade-kernel-buster-bpo
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel-buster-bpo_1.0.1_all.deb
+Size: 1038900
+MD5sum: 27c36946a7447c4167743b53650242a9
+SHA1: 12e90fcfaec92bd4c50e6d5d29393787226cf512
+SHA256: e594c249d77f051fd638532c29f1930fe5102a6a17bdec7ccd5da276e3cfcddc
+SHA512: 500f28b6382be7047e63e653672009e72b660223183af8df971e0bd77c9e6364b8258933dbebf73298d6e3d40300e65e8884dda761bd95b3e555eda164d8bad9
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
 
 Package: sfsload
 Architecture: amd64
