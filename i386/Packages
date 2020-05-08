@@ -5780,6 +5780,32 @@ SHA256: 744603b68e8992d7888c79cb63532ffff99a335e0e73d9860c93f1e41596c191
 SHA512: ccffe7c2005683292f023cfa8da602d6dffcbea1e31d07133e729de4770cae193d9c48aa175144b5c15478475874a6fea4bad15cf85cf0a1f99aa13a00abb034
 Description: Get pictures from HTTP server, open in Viewnior
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.1_all.deb
+Size: 159078
+MD5sum: 3d436c2a978b98f17a0fe61c49f0158f
+SHA1: cdc3ab535e1b6c3d06823254c63a57951040fbef
+SHA256: 79064489380546d649d19c62faca71b7bd535ceee7f483c4979141feec1bf68f
+SHA512: f31092091db958689b05bb20e457dc98d90cb8385e0dc1229fa451e37f23e7d809b689e4d3f65aae6d988c861060f4482fe9754170a3363abac013a566513612
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+
 Package: libssl1.0.0
 Architecture: i386
 Version: 1.0.1t-1+deb8u5
