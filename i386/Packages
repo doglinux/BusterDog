@@ -338,6 +338,22 @@ Description: default icon theme of GNOME
  The icons are used in many of the official gnome applications like eog,
  evince, system monitor, and many more.
 
+Package: yalarm2
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm2_0.0.3_all.deb
+Size: 119546
+MD5sum: 2d61fb40af772005d10556581f42ed0c
+SHA1: 27c84c92294046b6a02899970351f5095b06a633
+SHA256: 7a649a20c084043f03c6106089a783ff7e671fe2ff9409e9de4b61dde1701f15
+SHA512: 6751891c85584f03b97d10e8b629814f33fd816f660b344477c378bd2c885a5f84d2bad99194f5a91f7bd56d5c6567ab9ebb478f40d38765f80dee70528b963a
+Description: Alarm scheduler v2 by fredx181 and Argolance
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -4184,6 +4200,22 @@ SHA1: 811acf51765066a43f64ba5d2ba18446d332aa8d
 SHA256: 3cd58c9b99a5cfc961cfc810982ef3a1f9e19be2450df7bdbe13fa20b25f043c
 SHA512: 6fe92a79de653c0b92327a59e2827d33b5e5f7b0b0eb2f0d237e0c19d20f0169118400176d0f0bd2d16573061fbf76be3e6e138aff3d80f77cd56d9b8d6eda92
 Description: weav commandline processor
+
+Package: yalarm
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm_0.0.3_all.deb
+Size: 39416
+MD5sum: c46dcb433107a731d3c882fb58e258d6
+SHA1: 030370389fe7c1d0e363469c43387eee2e5e5f6c
+SHA256: 82bacd6b59fb6631249e66ecd1d705b44d8bef09dc7f827c1771b9a6f69f3e98
+SHA512: 42be6c27dbedeea33852cb0d7dcd43771a2f941b1cd9a4ce495eef1ea9761ebfd4fdebee96e0ad348c0290d7da168ebea3b152ab7e3383edbe66703fa230faa0
+Description: Alarm scheduler
 
 Package: websearch
 Architecture: all
