@@ -1977,6 +1977,7 @@ usr/local/bin/gdrive_gui2				    googledrivegui2
 usr/local/bin/gentriesquick				    xlunch
 usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gethosts					    debdog-advert-blocker
+usr/local/bin/gfontviewer				    font-viewer
 usr/local/bin/gifdance					    gifdance
 usr/local/bin/gifenc					    gifenc
 usr/local/bin/gifenc-sel				    gifenc
@@ -2147,6 +2148,7 @@ usr/local/bin/xluncher2					    xlunch
 usr/local/bin/xluncher3					    xlunch
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/xwd					    snappie
+usr/local/bin/yad-fontview				    font-viewer
 usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
@@ -5643,6 +5645,7 @@ usr/share/applications/flburn.desktop			    flburn
 usr/share/applications/freememapplet-off.desktop	    freememapplettray
 usr/share/applications/freememapplet-on.desktop		    freememapplettray
 usr/share/applications/frisbee.desktop			    frisbee
+usr/share/applications/gfontview.desktop		    font-viewer
 usr/share/applications/gnetcat.desktop			    gnetcat
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.7
 usr/share/applications/googledrivegui.desktop		    googledrivegui
@@ -5749,6 +5752,7 @@ usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlunch-help.desktop		    xlunch
 usr/share/applications/xrecord.desktop			    xhippo
 usr/share/applications/xvidcap.desktop			    xvidcap
+usr/share/applications/yad-fontview.desktop		    font-viewer
 usr/share/applications/yarlm-alarm-scheduler.desktop	    yalarm2
 usr/share/applications/yassm.desktop			    yassm
 usr/share/apport/package-hooks/conky.py			    conky-all,conky-std,conky-cli
@@ -9933,6 +9937,7 @@ usr/share/pixmaps/MPlayer.png				    gmplayer
 usr/share/pixmaps/PackIt.png				    pack-it
 usr/share/pixmaps/QtWeb.png				    qtweb
 usr/share/pixmaps/UExtract.png				    uextract
+usr/share/pixmaps/abc.png				    font-viewer
 usr/share/pixmaps/abiword48.png				    abiword-portable
 usr/share/pixmaps/alarm_142x164.png			    yalarm
 usr/share/pixmaps/alsamixertray.png			    alsamixer-tray
