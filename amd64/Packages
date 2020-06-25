@@ -4681,6 +4681,22 @@ SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
 SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
 Description: Makes a WiFi access point, needs iptables for internet
 
+Package: master-pdf-editor
+Architecture: amd64
+Version: 4.3.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 30000
+Depends: libsane, libqt4-svg, libqt4-network
+Filename: ./master-pdf-editor_4.3.61_amd64.deb
+Size: 9721386
+MD5sum: a7ed8f9f7acb4a2d374694feda8d0791
+SHA1: 6b9e18216f5c359070916ac02cde88c61130ce61
+SHA256: 3db31787d27b1adbfdc7f5a316258e7074f6b5d50fe473b90b2bde555d01e122
+SHA512: 9642ce1a295dc93c9fc0119c79669c2666297231b872ffcaf454524be78b05dd488e8efb13141ad0af525df5247c4fed2e10c3cbd2b8c3ec46e81bd844ae4d8b
+Description: Master PDF Editor https://code-industry.net/masterpdfeditor/
+
 Package: scrox
 Architecture: amd64
 Version: 0.8-17

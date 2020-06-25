@@ -5924,6 +5924,22 @@ SHA256: b7848cdfc14c385676ebfa5bf6200298cfe356e5cb4f02b559f750f79aa36dd8
 SHA512: 6f1282ba2ceb2b801c5e0a12c75a71bcef90590221a334aaa8aff391b191996e10e6ae370c83ab05082f8d3b8e061af263ea55ae4cc7e6769450d3636a06b7fb
 Description: CPU temperature monitor
 
+Package: master-pdf-editor
+Architecture: i386
+Version: 4.3.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 30000
+Depends: libsane, libqt4-svg, libqt4-network
+Filename: ./master-pdf-editor_4.3.61_i386.deb
+Size: 9661748
+MD5sum: f53a112d449433b48b3393b5927f0dec
+SHA1: 1f36728b946c33082898cb8d276cab70e297f01a
+SHA256: 185e7789d48b5a6850d33c12ba7433abc36dd761299f3056369cfe8977567883
+SHA512: 0d99ceed118843886d937ae8e937e0eaaf6bd3fda91ba7656067928f031d2f96e5ad7d90c06df48375e2ec5711777dbd770be7bf1da13657528836fb195c8515
+Description: Master PDF Editor https://code-industry.net/masterpdfeditor/
+
 Package: googledrivegui2
 Architecture: i386
 Version: 2.1.1
