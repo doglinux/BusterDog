@@ -5092,6 +5092,8 @@ usr/local/bin/alsamixertray				    alsamixer-tray
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/audio-converter				    audio-converter
+usr/local/bin/backlight-keys				    backlight-keys
+usr/local/bin/backlight-keys.txt			    backlight-keys
 usr/local/bin/batterup					    batterup
 usr/local/bin/batterup_restart				    batterup
 usr/local/bin/batterup_tray				    batterup
@@ -5134,6 +5136,7 @@ usr/local/bin/fixdepinstall				    fixdepinstall
 usr/local/bin/flashplayerchoice				    flashplayerchoice
 usr/local/bin/font-viewer				    font-viewer
 usr/local/bin/font2font					    font-viewer
+usr/local/bin/ftpmount					    pure-ftpgui
 usr/local/bin/gdrive					    googledrivegui2
 usr/local/bin/gdrive_gui				    googledrivegui
 usr/local/bin/gdrive_gui2				    googledrivegui2
@@ -5205,6 +5208,7 @@ usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwmconf,jwm-setup-dd64,jwm-setup
 usr/local/bin/p910nd-control				    p910nd-print-server
 usr/local/bin/packit					    pack-it
+usr/local/bin/palettizer				    palettizer
 usr/local/bin/peasycdplayer				    peasymp3
 usr/local/bin/peasyclock				    peasyclock
 usr/local/bin/peasydial					    peasydial
@@ -5243,6 +5247,8 @@ usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/postergo					    gopoststuff
 usr/local/bin/postergo-sel				    gopoststuff
 usr/local/bin/ppm2mpeg.sh				    xvidcap
+usr/local/bin/pure-ftpd					    pure-ftpgui
+usr/local/bin/pure-pw					    pure-ftpgui
 usr/local/bin/qiv-gui-info.sh				    qiv-slideshow
 usr/local/bin/qiv-gui.sh				    qiv-slideshow
 usr/local/bin/quick-remastergui				    quick-remaster
@@ -5254,6 +5260,7 @@ usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
 usr/local/bin/run-as-user				    run-as-user
+usr/local/bin/run-pure-ftp				    pure-ftpgui
 usr/local/bin/samba4-control				    samba4-control
 usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwmconf,jwm-setup
@@ -7712,6 +7719,21 @@ usr/local/pmusic/txt_attributes				    pmusic
 usr/local/pmusic/txt_id3genre				    pmusic
 usr/local/pmusic/txt_visualization			    pmusic
 usr/local/postergo/.gopoststuff.conf			    gopoststuff
+usr/local/pureFTP/.DirIcon				    pure-ftpgui
+usr/local/pureFTP/AppInfo.xml				    pure-ftpgui
+usr/local/pureFTP/AppRun				    pure-ftpgui
+usr/local/pureFTP/Help/doc/AUTHORS			    pure-ftpgui
+usr/local/pureFTP/Help/doc/CONTACT			    pure-ftpgui
+usr/local/pureFTP/Help/doc/COPYING			    pure-ftpgui
+usr/local/pureFTP/Help/doc/FAQ				    pure-ftpgui
+usr/local/pureFTP/Help/doc/README			    pure-ftpgui
+usr/local/pureFTP/Help/doc/README.Virtual-Users		    pure-ftpgui
+usr/local/pureFTP/Help/doc/pure-ftpd.htm		    pure-ftpgui
+usr/local/pureFTP/Help/doc/pure-pw.htm			    pure-ftpgui
+usr/local/pureFTP/Help/readme.txt			    pure-ftpgui
+usr/local/pureFTP/bin/pure-ftpd				    pure-ftpgui
+usr/local/pureFTP/bin/pure-pw				    pure-ftpgui
+usr/local/pureFTP/icon.png				    pure-ftpgui
 usr/local/r-shift/AppRun				    redshift-gui-lite
 usr/local/r-shift/icons/Bright.png			    redshift-gui-lite
 usr/local/r-shift/icons/checked.png			    redshift-gui-lite
@@ -8207,6 +8229,7 @@ usr/share/applications/Dancing Letters Generator (HTML).desktop dancing-letters
 usr/share/applications/Dancing Letters Generator (forum).desktop dancing-letters
 usr/share/applications/Dancing Letters to GIF.desktop	    gifdance
 usr/share/applications/DogRadio.desktop			    dogradio
+usr/share/applications/FTPmount.desktop			    pure-ftpgui
 usr/share/applications/GTK-YouTube-Updater.desktop	    youtube-viewer,straw-viewer
 usr/share/applications/GifenC (video to _gif).desktop	    gifenc
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
@@ -8220,6 +8243,7 @@ usr/share/applications/MasterPDFEditor.desktop		    master-pdf-editor
 usr/share/applications/PackIt.desktop			    pack-it
 usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
+usr/share/applications/Pure_FTPd-FTP-server.desktop	    pure-ftpgui
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
 usr/share/applications/Samba4-Control.desktop		    samba4-control
@@ -8300,6 +8324,7 @@ usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup,jwm-setup-dd64
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server
 usr/share/applications/palemoon.desktop			    palemoon
+usr/share/applications/palettizer.desktop		    palettizer
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
@@ -11282,6 +11307,7 @@ usr/share/pixmaps/floppy24.png				    mount-wizard
 usr/share/pixmaps/folder24.png				    jwmconf,jwm-setup
 usr/share/pixmaps/folder48.png				    jwmconf,jwm-setup
 usr/share/pixmaps/frisbee.png				    frisbee
+usr/share/pixmaps/ftp.png				    pure-ftpgui
 usr/share/pixmaps/gftp.png				    gftp-gtk
 usr/share/pixmaps/gftp.xpm				    gftp-gtk
 usr/share/pixmaps/gif-file.png				    gifondesktop
@@ -11374,6 +11400,7 @@ usr/share/pixmaps/other.png				    jwmconf,jwm-setup
 usr/share/pixmaps/p910nd-control.png			    p910nd-print-server
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/palettizer.png			    palettizer
 usr/share/pixmaps/partview-24.png			    peasypartview
 usr/share/pixmaps/partview-48.png			    peasypartview
 usr/share/pixmaps/peasyclock.png			    peasyclock

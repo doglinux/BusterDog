@@ -1233,6 +1233,22 @@ SHA256: dc27d300296f7da725648d9beee27f8b13978da46d32c811ab9c9676f9d883f2
 SHA512: 13ad9a941407e128acd64285ce297a9ba3f7a308d35f2660e45ea9880b67901b50544e7820ee370c23034b83f38cff76adcb105244faffc28a069337cda36477
 Description: Set system locale
 
+Package: pure-ftpgui
+Architecture: amd64
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6, libssl1.0.0, curlftpfs
+Filename: ./pure-ftpgui_0.0.2_amd64.deb
+Size: 131944
+MD5sum: 7e7bbe5426b310d5d9c600e3fdcfce28
+SHA1: 0a84ae84a7869f5f08732d9698e1a0648e1df24d
+SHA256: c5cd3061a062292eff5474ecb906f85f07827b2c2fe0f82b177c03f2e38682ae
+SHA512: 2e375ab6598122b67887ed00b0f0371681ac784d0729149437dc5e3127181d521517b13f1742ba8acab279dd44650d4e362fe899773c6b5ce93fcfe2a29f69ba
+Description: pure-ftp GUI and ftpmount
+
 Package: yassm
 Architecture: all
 Version: 4.2-1
@@ -2714,6 +2730,33 @@ SHA256: 8bdfee44956c703fdb027f2f9aa895a46fcb0605d91dfb8b9f7ba00b603124b7
 SHA512: da2cd2228f3f40a348ad406b7155360dc3df388e8d62842e45c4a62c3fba28defa8e33f14b7648a302126bc0f4f98883d327dc69182b5bc428302ba0acd14656
 Description: Mount images, savefile, modules
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.7.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ccrypt
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./peasywifi_4.7.0_amd64.deb
+Size: 16420
+MD5sum: 11dbd177ae7cff9cf6e41e511a978898
+SHA1: 11db026dbca612152c4ddda604a439663fcea891
+SHA256: 425deb68639c353a0d6680b36f9bcd9fd4758929a426fb234247a24eadad5522
+SHA512: 6996165b185619167cc853f87bfb37b905b8737d51bb98f5d8e98bc507bb94ddf3f61f90a6d4eab9de42f41abf2202fad00663cc865edc71530fad791d626113
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+ Changes in v4.7:
+ 1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
+ 2. There are improved instructions for setting up an alternate Ethernet interface like usb0
+
 Package: quick-remaster
 Architecture: amd64
 Version: 1.1.6
@@ -3742,6 +3785,21 @@ SHA512: 691611e3c493d9050f15ad2e6db12b50f684328aa8170a3eb51b2b3ec417945944724708
 Description: ffconvert for DebianDog.
  ffconvert by MakeDEBPackage-GUI.
  checks for Debian version and recommends libav-tools if it is 8 or higher.
+
+Package: palettizer
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm
+Filename: ./palettizer_1.0_all.deb
+Size: 3464
+MD5sum: a0f96760b2c9082aef58f19040a0e54d
+SHA1: 41a16b3996a17551444d518dce35a033d58e3248
+SHA256: 6b1037fbdfef2a171da2beb69141804135f29b7435e97f2bd4021428d7a05d3e
+SHA512: 080e99b713b74b5354b3e20857a0656920b2e2479bdf3ba0eb96db5f9749044e95b4f361c0a3cbd69e08aea19e80b6bf9095743a046e8085603049540917ff3a
+Description: Converts a PNG graphic from RGB to indexed palette
 
 Package: libbluray1
 Architecture: amd64
@@ -5719,6 +5777,20 @@ SHA1: 1e1227a8f6f500e72fd8695bdc502f32a3095ebf
 SHA256: 65a96f35299a808384de524804d1310396654f77ca7ef74fa26f3f516f507d6d
 SHA512: f4d3785a36ae1b5f5cef7e74cd0d2551c0006db76a43cd1f7cf9f07390d3e39da4b9a86820ed619155ea8a375a1becdcab91a20d7627503e041507b1471455ab
 Description: desktop configuration save settings fix for DebianDog
+
+Package: backlight-keys
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./backlight-keys_1.0_all.deb
+Size: 1252
+MD5sum: be178e2b6a0fc8e9c6daa1811d235150
+SHA1: 9bf1cafed937149081c17065bb08645d2002fdc2
+SHA256: b130d722854b591351e2883d2fa4e381b64851be288d952fa60d398abda7b89b
+SHA512: 7d9d44ce1669ddf79a1b0ae9aa0483afa0e4fcee5a1c058de96efc2704db58bacfe61a6acbcd1967fff80f33ad38b1f4feca9c9914a46e1b2da657b8e762a6fa
+Description: controls laptop backlight with keyboard brightness keys
 
 Package: xhippo
 Architecture: amd64

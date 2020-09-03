@@ -1,0 +1,649 @@
+#!/bin/sh
+# rcrsn51 2018-01-07
+
+export TEXTDOMAIN=deblive-multi-installer
+export OUTPUT_CHARSET=UTF-8
+
+FINDUUIDANDLABEL ()
+{
+eval $2
+eval $3
+}
+export -f FINDUUIDANDLABEL
+
+INSTALL ()
+{
+[ ! -f "$ISOFILE" ] && Xdialog --title " " --msgbox "$(gettext 'ISO file not found!')" 0 0 && exit
+[ ! -d "$INSTALLFOLDER"  ] && Xdialog --title " " --msgbox "$(gettext 'Install folder not found!')" 0 0 && exit
+[ -d "$INSTALLFOLDER/live" ] && Xdialog --title " " --msgbox "$(gettext 'There is already a live folder here!')" 0 0 && exit
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 240000 &
+MSGPID=$!
+
+mkdir -p /mnt/cdrom
+umount /mnt/cdrom	2>/dev/null #just in case
+mount -o loop "$ISOFILE" /mnt/cdrom
+cp -r /mnt/cdrom/live "$INSTALLFOLDER"
+umount /mnt/cdrom
+sync
+
+kill $MSGPID
+
+LIVEPATH=${INSTALLFOLDER#/mnt/live}
+LIVEPATH=$(echo -n $LIVEPATH | cut -d/ -f4-)
+FINDUUIDANDLABEL $(blkid $PARTITION)
+
+EXITARG=""
+[ $EXITMODE = "true" ] && EXITARG="EXIT:"
+
+cat > /tmp/grubmenu.txt <<EOF
+
+title $(basename "$ISOFILE" .iso) on ${PARTITION:5}
+uuid $UUID
+kernel /$LIVEPATH/live/vmlinuz1 edd=off noauto from=UUID:$UUID/$LIVEPATH changes=${EXITARG}UUID:$UUID/$LIVEPATH
+initrd /$LIVEPATH/live/initrd1.xz
+EOF
+
+if [ $CLEANMODE = "true" ]; then
+cat >> /tmp/grubmenu.txt <<EOF2
+
+title $(basename "$ISOFILE" .iso) on ${PARTITION:5} CleanMode
+uuid $UUID
+kernel /$LIVEPATH/live/vmlinuz1 edd=off noauto copy2ram from=UUID:$UUID/$LIVEPATH
+initrd /$LIVEPATH/live/initrd1.xz
+EOF2
+fi
+
+cp /tmp/grubmenu.txt "$INSTALLFOLDER"
+
+Xdialog --no-cancel --title "Grub4Dos menu entry - note the long 'kernel' line" --textbox /tmp/grubmenu.txt 14 120 &
+}
+export -f INSTALL
+
+INSTALL3 ()
+{
+fdisk -l | grep -A 5 "${BOOTDRIVE}:" | grep -q "gpt"
+[ $? -eq 0 ] && Xdialog --title " " --msgbox "This appears to be a GPT disc!\nUse Legacy GRUB instead." 0 0 && exit
+
+[ -z $(which bootlace.com) ] && Xdialog --title " " --msgbox "$(gettext 'Grub4Dos not installed!')" 0 0 && exit
+Xdialog --title " " --yesno "$(gettext 'You are about to change the MBR of drive') $BOOTDRIVE\n$(gettext 'Do you want to continue?')" 0 0
+[ $? -gt 0 ] && exit
+REPLY=$(Xdialog --stdout --title " "  --inputbox "$(gettext 'Type START to start.')" 0 0)
+[ "$REPLY" != "START" ] && exit
+bootlace.com --boot-prevmbr-last --time-out=0 /dev/$BOOTDRIVE
+[ $? -gt 0 ] && Xdialog --title " " --msgbox "$(gettext 'Operation failed!')" 0 0 && exit
+
+case ${BOOTDRIVE:0:1} in
+	s) BOOTPART=$BOOTDRIVE"1";;
+	m) BOOTPART=$BOOTDRIVE"p1";;
+esac
+
+mkdir -p /mnt/data
+umount /mnt/data 2>/dev/null #just in case
+mount /dev/$BOOTPART /mnt/data
+cp $(find /usr/lib -name "grldr") /mnt/data
+[ $? -gt 0 ] && cp /usr/share/grub4dos/grldr /mnt/data	#Fatdog
+[ -f /mnt/data/menu.lst ] && mv /mnt/data/menu.lst /mnt/data/menu.lst.000
+cat > /mnt/data/menu.lst << EOF
+timeout 10
+default 0
+
+EOF
+umount /mnt/data
+Xdialog --title " " --msgbox "$(gettext 'Drive is now bootable.\nSet the Boot flag in Gparted.\nAdd an entry to the menu.lst.')" 0 0
+}
+export -f INSTALL3
+
+INSTALL4 ()
+{
+[ ! -f "$ISOFILE4" ] && Xdialog --title " " --msgbox "$(gettext 'ISO file not found!')" 0 0 && exit
+[ ! -d "$INSTALLFOLDER4"  ] && Xdialog --title " " --msgbox "$(gettext 'Install folder not found!')" 0 0 && exit
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 240000 &
+MSGPID=$!
+
+mkdir -p /mnt/cdrom
+umount /mnt/cdrom 2>/dev/null #just in case
+mount -o loop "$ISOFILE4" /mnt/cdrom
+cp /mnt/cdrom/vmlinuz /mnt/cdrom/initrd.gz  /mnt/cdrom/*.sfs "$INSTALLFOLDER4"
+umount /mnt/cdrom
+sync
+
+kill $MSGPID
+
+LIVEPATH=${INSTALLFOLDER4#/mnt/live}
+LIVEPATH=$(echo -n $LIVEPATH | cut -d/ -f4-)
+FINDUUIDANDLABEL $(blkid $PARTITION4)
+
+cat > /tmp/grubmenu.txt <<EOF
+
+### For a USB install, change pmedia=atahd to pmedia=usbflash AND delete pdev1=xxxx ###
+
+title $(basename "$ISOFILE4" .iso) on ${PARTITION4:5}
+uuid $UUID
+kernel /$LIVEPATH/vmlinuz pmedia=atahd pdev1=${PARTITION4:5} psubdir=$LIVEPATH pfix=fsck
+initrd /$LIVEPATH/initrd.gz
+EOF
+
+if [ $CLEANMODE4 = "true" ]; then
+cat >> /tmp/grubmenu.txt <<EOF2
+
+title $(basename "$ISOFILE4" .iso) on ${PARTITION4:5} CleanMode
+uuid $UUID
+kernel /$LIVEPATH/vmlinuz pmedia=atahd pdev1=${PARTITION4:5} psubdir=$LIVEPATH pfix=fsck,ram 
+initrd /$LIVEPATH/initrd.gz
+EOF2
+fi
+
+cp /tmp/grubmenu.txt "$INSTALLFOLDER4"
+
+Xdialog --no-cancel --title "Grub4Dos menu entry" --textbox /tmp/grubmenu.txt 14 120 &
+}
+export -f INSTALL4
+
+INSTALL7 ()
+{
+[ ! -f "$GRUBCODE" ] && Xdialog --title " " --msgbox "$(gettext 'Grub4Dos file not found!')" 0 0 && exit
+rm -f /tmp/grub.cfg
+while read L; do
+	L=$(echo -n $L | tr -d [:cntrl:])
+	if [ "${L:0:5}" = "title" ]; then
+		echo 'menuentry "'${L:6}'" {' >> /tmp/grub.cfg
+	elif [ "${L:0:4}" = "uuid" ]; then
+		echo '  search --no-floppy --fs-uuid --set=root' ${L:5} >> /tmp/grub.cfg
+	elif [ "${L:0:6}" = "kernel" ]; then
+		echo '  linux' ${L:7} >> /tmp/grub.cfg
+	elif [ "${L:0:6}" = "initrd" ]; then
+		echo '  '$L >> /tmp/grub.cfg
+		echo "}" >> /tmp/grub.cfg
+	elif [ "${L:0:7}" = "timeout" ]; then
+		echo 'set timeout='${L:8} >> /tmp/grub.cfg
+	else
+		echo '#' $L >> /tmp/grub.cfg
+	fi
+done < $GRUBCODE
+GRUB2CODE=$(dirname $GRUBCODE)/grub2.txt
+cp /tmp/grub.cfg $GRUB2CODE
+Xdialog --title " " --msgbox "GRUB2 code saved in $GRUB2CODE" 0 0
+}
+export -f INSTALL7
+
+INSTALL8 ()
+{
+[ ! -f "$ISOFILE8" ] && Xdialog --title " " --msgbox "$(gettext 'ISO file not found!')" 0 0 && exit
+[ ! -d "$LIVEBOOTFOLDER"  ] && Xdialog --title " " --msgbox "$(gettext 'Install folder not found!')" 0 0 && exit
+[ -d "$LIVEBOOTFOLDER/live" ] && Xdialog --title " " --msgbox "$(gettext 'There is already a live folder here!')" 0 0 && exit
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 120000 &
+MSGPID=$!
+
+mkdir -p /mnt/cdrom
+umount /mnt/cdrom	2>/dev/null #just in case
+mount -o loop "$ISOFILE8" /mnt/cdrom
+cp -r /mnt/cdrom/live "$LIVEBOOTFOLDER"
+umount /mnt/cdrom
+
+LIVEPATH=${LIVEBOOTFOLDER#/mnt/live}
+LIVEPATH=$(echo -n $LIVEPATH | cut -d/ -f4-)
+FINDUUIDANDLABEL $(blkid $LIVEBOOTPART)
+
+cat > /tmp/grubmenu.txt <<EOF8
+
+title $(basename "$ISOFILE8" .iso) Live-boot on ${LIVEBOOTPART:5}
+uuid $UUID
+kernel /$LIVEPATH/live/vmlinuz1 edd=off boot=live live-media-path=/$LIVEPATH/live persistence persistence-path=/$LIVEPATH config swapon quickreboot noeject showmounts union=aufs
+initrd /$LIVEPATH/live/initrd.img
+
+title $(basename "$ISOFILE8" .iso) Live-boot on ${LIVEBOOTPART:5} CleanMode
+uuid $UUID
+kernel /$LIVEPATH/live/vmlinuz1 edd=off boot=live live-media-path=/$LIVEPATH/live persistence persistence-path=/dev/null config swapon quickreboot noeject showmounts union=aufs
+initrd /$LIVEPATH/live/initrd.img
+EOF8
+cp /tmp/grubmenu.txt "$LIVEBOOTFOLDER"
+
+kill $MSGPID
+Xdialog --title " " --no-buttons --infobox "Making $SAVEFILESIZE GB persistence file ..." 4 50 360000 &
+MSGPID=$!
+
+JOURNALARG=""
+[ $JOURNAL = "false" ] && JOURNALARG="-O ^has_journal"
+
+dd if=/dev/null of=$LIVEBOOTFOLDER/persistence bs=1M seek=${SAVEFILESIZE}000
+mkfs.ext4 $JOURNALARG -F $LIVEBOOTFOLDER/persistence
+mkdir /tmp/mntpt
+mount -o loop $LIVEBOOTFOLDER/persistence /tmp/mntpt
+echo "/ union" > /tmp/mntpt/persistence.conf
+umount /tmp/mntpt
+rmdir /tmp/mntpt
+
+sync
+kill $MSGPID
+Xdialog --no-cancel --title "Grub4Dos menu entry - note the long 'kernel' line" --textbox /tmp/grubmenu.txt 14 120 &
+}
+export -f INSTALL8
+
+INSTALL9 ()
+{
+if [ -f /usr/bin/mkisofs ]; then
+	MAKEISOAPP="mkisofs"
+elif [ -f /usr/bin/xorrisofs ]; then
+	MAKEISOAPP="xorrisofs"
+else
+	Xdialog --title " " --msgbox "$(gettext 'mkisofs/xorrisofs not found!')" 0 0 && exit
+fi
+
+[ ! -f "$ISOFILE9" ] && Xdialog --title " " --msgbox "$(gettext 'ISO file not found!')" 0 0 && exit
+NEWISOFILE=${ISOFILE9%.iso}"_"${ISOPART//\//_}".iso"
+
+case $ISOFROMOPT in
+	false) FROMARG="copy2ram from=/";;
+	true)  FROMARG="from=/dev/$ISOPART";;
+esac
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 240000 &
+MSGPID=$!
+
+mkdir -p /mnt/cdrom
+mount -t iso9660 $ISOFILE9 /mnt/cdrom
+rm -rf /tmp/isobuild
+mkdir /tmp/isobuild
+cp -r /mnt/cdrom/live /tmp/isobuild
+cp /mnt/cdrom/isolinux/isolinux.bin /tmp/isobuild
+echo default /live/vmlinuz1 initrd=/live/initrd1.xz noauto $FROMARG changes=EXIT:/mnt/$ISOPART > /tmp/isobuild/isolinux.cfg
+
+Xdialog --title " " --msgbox "Pause here to include extra modules in /tmp/isobuild/live ...\nPress OK to continue." 0 0
+
+sync
+$MAKEISOAPP -r -J -f -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o $NEWISOFILE /tmp/isobuild
+
+umount /mnt/cdrom
+sync
+kill $MSGPID
+Xdialog --title " " --msgbox "$(gettext 'The new ISO file is')\n$NEWISOFILE" 0 0 
+}
+export -f INSTALL9
+
+INSTALL5 ()
+{
+[ ! -f "$ISOFILE5" ] && Xdialog --title " " --msgbox "$(gettext 'ISO file not found!')" 0 0 && exit
+[ ! -d "$INSTALLFOLDER5"  ] && Xdialog --title " " --msgbox "$(gettext 'Install folder not found!')" 0 0 && exit
+[ -d "$INSTALLFOLDER5/casper" ] && Xdialog --title " " --msgbox "$(gettext 'There is already a casper folder here!')" 0 0 && exit
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 120000 &
+MSGPID=$!
+
+mkdir -p /mnt/cdrom
+umount /mnt/cdrom	2>/dev/null #just in case
+mount -o loop "$ISOFILE5" /mnt/cdrom
+cp -r /mnt/cdrom/casper "$INSTALLFOLDER5"
+umount /mnt/cdrom
+sync
+
+kill $MSGPID
+
+LIVEPATH=${INSTALLFOLDER5#/mnt/live}
+LIVEPATH=$(echo -n $LIVEPATH | cut -d/ -f4-)
+FINDUUIDANDLABEL $(blkid $PARTITION5)
+
+cat > /tmp/grubmenu.txt <<EOF
+
+title $(basename "$ISOFILE5" .iso) on ${PARTITION5:5}
+uuid $UUID
+kernel /$LIVEPATH/casper/vmlinuz edd=off noauto from=UUID:$UUID/$LIVEPATH changes=UUID:$UUID/$LIVEPATH
+initrd /$LIVEPATH/casper/initrd1.xz
+EOF
+
+if [ $CLEANMODE5 = "true" ]; then
+cat >> /tmp/grubmenu.txt <<EOF2
+
+title $(basename "$ISOFILE5" .iso) on ${PARTITION5:5} CleanMode
+uuid $UUID
+kernel /$LIVEPATH/casper/vmlinuz edd=off noauto copy2ram from=UUID:$UUID/$LIVEPATH
+initrd /$LIVEPATH/casper/initrd1.xz
+EOF2
+fi
+
+cp /tmp/grubmenu.txt "$INSTALLFOLDER5"
+
+Xdialog --no-cancel --title "Grub4Dos menu entry - note the long 'kernel' line" --textbox /tmp/grubmenu.txt 14 120 &
+}
+export -f INSTALL5
+
+#####################
+
+Xdialog --title " " --no-buttons --infobox "$(gettext 'Working ...')" 4 20 120000 &
+MSGPID=$!
+
+PARTLIST=$(blkid | grep "ext" | grep -v "loop" | sort | cut -d: -f1 | sed -e 's|^|<item>|;s|$|</item>|')
+PARTLIST2=$(blkid | grep -v "loop" | sort | cut -d: -f1 | sed -e 's|^|<item>|;s|$|</item>|')
+
+kill $MSGPID
+
+export DIALOG="
+<window title=\"Debian-Live Multi Installer\">
+<vbox>
+<notebook labels=\"$(gettext 'Basic Install|Live-boot|Bootloader|Puppy|Ubuntu|GRUB2|ISO')\">
+<vbox>
+	<frame $(gettext 'Select the Debian-Live ISO file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>ISOFILE</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">ISOFILE</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:ISOFILE</action>
+			</button>
+		</hbox>
+	</frame>	
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Select the target partition')   </label></text>
+			<combobox width-request=\"150\">
+		 		$PARTLIST
+				<variable>PARTITION</variable>
+			</combobox>
+		</hbox>
+	</frame>
+	<frame $(gettext 'Select the EMPTY folder to hold the install')>
+		<hbox>
+			<entry accept=\"directory\">
+				<variable>INSTALLFOLDER</variable>
+			</entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">INSTALLFOLDER</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:INSTALLFOLDER</action>
+			</button>
+		</hbox>
+	</frame>
+	<hbox>
+		<checkbox>
+			<label>Use EXIT mode</label>
+			<variable>EXITMODE</variable>
+		</checkbox>
+		<checkbox>
+			<label>Add CleanMode entry</label>
+			<variable>CLEANMODE</variable>
+		</checkbox>
+		<text><label>\"  \"</label></text>
+		<button>
+			<label>$(gettext 'Install')</label>
+			<action>INSTALL</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame $(gettext 'Select the Debian-Live ISO file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>ISOFILE8</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">ISOFILE8</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:ISOFILE8</action>
+			</button>
+		</hbox>
+	</frame>
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Target partition')   </label></text>
+			<combobox width-request=\"150\">
+		 		$PARTLIST2
+				<variable>LIVEBOOTPART</variable>
+			</combobox>
+		</hbox>
+	</frame>
+	<frame $(gettext 'Select the EMPTY folder to hold the install')>
+		<hbox>
+			<entry accept=\"directory\">
+				<variable>LIVEBOOTFOLDER</variable>
+			</entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">LIVEBOOTFOLDER</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:LIVEBOOTFOLDER</action>
+			</button>
+		</hbox>
+	</frame>
+	<hbox>
+		<text><label>Savefile (GB)</label></text>
+		<combobox width-request=\"50\">
+		 	<item>1</item><item>2</item><item>4</item><item>6</item>
+			<variable>SAVEFILESIZE</variable>
+		</combobox>
+		<checkbox>
+			<label>Journal</label>
+			<variable>JOURNAL</variable>
+			<default>true</default>
+		</checkbox>
+		<text><label>\"  \"</label></text>
+		<button>
+			<label>$(gettext 'Install')</label>
+			<action>INSTALL8</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame>
+		<text xalign=\"0\"><label>$(gettext 'Warning! This tool replaces the standard DOS/Win boot code')</label></text>
+		<text xalign=\"0\"><label>$(gettext 'in the MBR of the selected drive with the Grub4Dos bootloader.')</label></text>
+		<text xalign=\"0\"><label>$(gettext 'It puts grldr and a menu.lst file in the first partition of the drive.')</label></text>
+		<text xalign=\"0\"><label>$(gettext 'Use with care if you are multi-booting another OS.')</label></text>
+	</frame>
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Select the boot drive')   </label></text>
+			<combobox width-request=\"150\">
+		 		<item>sda</item><item>sdb</item><item>sdc</item><item>sdd</item><item>mmcblk0</item><item>mmcblk1</item>
+				<variable>BOOTDRIVE</variable>
+			</combobox>
+		</hbox>
+	</frame>
+	<hbox>
+		<button>
+			<label>$(gettext 'Install')</label>
+			<action>INSTALL3</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame $(gettext 'Select the Puppy ISO file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>ISOFILE4</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">ISOFILE4</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:ISOFILE4</action>
+			</button>
+		</hbox>
+	</frame>	
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Select the target partition')   </label></text>
+			<combobox width-request=\"150\">
+		 		$PARTLIST2
+				<variable>PARTITION4</variable>
+			</combobox>
+		</hbox>
+	</frame>
+	<frame $(gettext 'Select the EMPTY folder to hold the install')>
+		<hbox>
+			<entry accept=\"directory\">
+				<variable>INSTALLFOLDER4</variable>
+			</entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">INSTALLFOLDER4</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:INSTALLFOLDER4</action>
+			</button>
+		</hbox>
+	</frame>
+	<hbox>
+		<checkbox>
+			<label>Add a CleanMode entry</label>
+			<variable>CLEANMODE4</variable>
+		</checkbox>
+		<text><label>\"  \"</label></text>
+		<button>
+			<label>$(gettext 'Install')</label>
+			<action>INSTALL4</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame $(gettext 'Select the Ubuntu-Live ISO file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>ISOFILE5</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">ISOFILE5</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:ISOFILE5</action>
+			</button>
+		</hbox>
+	</frame>	
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Select the target partition')   </label></text>
+			<combobox width-request=\"150\">
+		 		$PARTLIST
+				<variable>PARTITION5</variable>
+			</combobox>
+		</hbox>
+	</frame>
+	<frame $(gettext 'Select the EMPTY folder to hold the install')>
+		<hbox>
+			<entry accept=\"directory\">
+				<variable>INSTALLFOLDER5</variable>
+			</entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">INSTALLFOLDER5</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:INSTALLFOLDER5</action>
+			</button>
+		</hbox>
+	</frame>
+	<hbox>
+		<text><label>\"  \"</label></text>
+		<checkbox>
+			<label>Add a CleanMode entry</label>
+			<variable>CLEANMODE5</variable>
+		</checkbox>
+		<text><label>\"  \"</label></text>
+		<button>
+			<label>$(gettext 'Install')</label>
+			<action>INSTALL5</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame>
+		<text xalign=\"0\"><label>$(gettext 'This tool converts the Grub4Dos code from a Basic Install')</label></text>
+		<text xalign=\"0\"><label>$(gettext 'into GRUB2 format. Use it with UEFI boot setups.')</label></text>
+	</frame>
+	<frame $(gettext 'Select the Grub4Dos file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>GRUBCODE</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">GRUBCODE</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:GRUBCODE</action>
+			</button>
+		</hbox>
+	</frame>
+	<text><label>\"  \"</label></text>
+	<text><label>\"  \"</label></text>
+	<hbox>
+		<button>
+			<label>$(gettext 'Convert')</label>
+			<action>INSTALL7</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+<vbox>
+	<frame>
+		<text xalign=\"0\" width-request=\"500\"><label>$(gettext 'This tool builds an alternate ISO file. When burned to disc and')</label></text>
+		<text xalign=\"0\"><label>$(gettext 'booted, it puts the `changes` folder on a hard or USB drive.')</label></text>
+	</frame>
+	<frame $(gettext 'Select the Debian-Live ISO file')>
+		<hbox>
+			<entry accept=\"filename\">
+				<variable>ISOFILE9</variable>
+			 </entry>
+			<button>
+				<input file stock=\"gtk-open\"></input>
+				<action type=\"fileselect\">ISOFILE9</action>
+			</button>
+			<button>
+				<input file stock=\"gtk-clear\"></input>
+				<action>Clear:ISOFILE9</action>
+			</button>
+		</hbox>
+	</frame>
+	<frame>
+		<hbox>
+			<text><label>$(gettext 'Target partition (must be ext)')  </label></text>
+      <entry>
+        <variable>ISOPART</variable>
+        <default>sdXY</default>
+      </entry>
+		</hbox>
+	</frame>
+	<hbox>
+		<checkbox>
+			<label>Put \`live\` folder on target partition   </label>
+			<variable>ISOFROMOPT</variable>
+		</checkbox>
+		<button>
+			<label>$(gettext 'Build')</label>
+			<action>INSTALL9</action>
+		</button>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+</notebook>
+</vbox>
+</window>"
+
+gtkdialog3 -c -p DIALOG
+sync
