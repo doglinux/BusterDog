@@ -4501,6 +4501,21 @@ Description: library for GIF images (library)
  .
  This package contains the library.
 
+Package: gnetcat
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./gnetcat_1.4_all.deb
+Size: 5476
+MD5sum: 2239a6ef241a5a31912f7ed239cadd5b
+SHA1: fcd2121a398f55e667a2c35a6b7d3bb15db77556
+SHA256: 68391b6bade653f21037f696c22147036cf2692885e50316572ab8a1a99c1435
+SHA512: e44165e29e65de5dfb2e207d51c3716a5712e14be0a5d232a2c37c8e2a7c635e5bb6405dae5926282825f333a92c0f716c7ea1dd099cb62fcb4c2faec74433a8
+Description: File transfer with busybox nc
+
 Package: move-in-crypt
 Architecture: all
 Version: 1.0.1

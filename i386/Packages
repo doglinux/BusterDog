@@ -4829,6 +4829,21 @@ Description:
  cast2chrome supports youtube urls and can save media.
  It is written in bash/gtkwialog v 0.8.5 and above.
 
+Package: gnetcat
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./gnetcat_1.4_all.deb
+Size: 5476
+MD5sum: 2239a6ef241a5a31912f7ed239cadd5b
+SHA1: fcd2121a398f55e667a2c35a6b7d3bb15db77556
+SHA256: 68391b6bade653f21037f696c22147036cf2692885e50316572ab8a1a99c1435
+SHA512: e44165e29e65de5dfb2e207d51c3716a5712e14be0a5d232a2c37c8e2a7c635e5bb6405dae5926282825f333a92c0f716c7ea1dd099cb62fcb4c2faec74433a8
+Description: File transfer with busybox nc
+
 Package: lumina-desktop-debdog
 Architecture: i386
 Version: 0.8.7-1-devel-jessie-qt5
