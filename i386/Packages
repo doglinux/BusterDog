@@ -6755,6 +6755,36 @@ Description: A simple YouTube Downloader
  - Gives choice which quality to download, e.g. 360p or 720p, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mpv
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.5
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.5_all.deb
+Size: 159600
+MD5sum: e3925da26eca85f09665b3522ca711ae
+SHA1: cb32a1a9f4e245201b1242290a2890338545bb03
+SHA256: f0d26128e72d4c0578a77dcbafb8b86cccfbe4aaa06bce2009246523b20927b2
+SHA512: 0bd68f8d7553073d963cb5c81e6079c612179e98e851847e5c38f12b832cdfa1deee91d378527facd0959fa6fd84cbaff72fc931a6dee584801f5b1d45d6096d
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now
+
 Package: libpam-elogind
 Architecture: i386
 Version: 241.1-1+debian1
@@ -7477,6 +7507,21 @@ Description: Monitor color adjustment tool
  Redshift-gui light is using yad ("notification" icon)
  and the redshift commandline utility (yad and redshift are builtin) 
  Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
+
+Package: gnetcat
+Architecture: all
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./gnetcat_1.5_all.deb
+Size: 5506
+MD5sum: 61a8111a32a1cc1e02a96803cf7a34e4
+SHA1: 2138cff7598281070f253859841d49505a74a374
+SHA256: 08b0461549d474d11d8bd0cef6088562ef99251184cf0a149fd343e6f014d47a
+SHA512: fd4fd63a4eee43562f47f9fde4a3c0a1709261982c09fd05a64c730efcb025329712f587a0839725fd509c39eb7d6cbf7426acaac0cc2d28719634ede7e8b3e4
+Description: File transfer with busybox nc
 
 Package: ceni
 Architecture: i386

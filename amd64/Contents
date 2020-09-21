@@ -746,6 +746,7 @@ root/Startup/my_squash_loader_tray			    my-squash-loader
 root/Startup/network_tray.sh				    frisbee
 root/Startup/p910nd-start				    p910nd-print-server
 root/Startup/peasyfwmon_tray				    peasyfwmon
+root/Startup/peasymag_tray				    peasymag
 root/Startup/peasymp3_tray				    peasymp3
 root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
@@ -5215,6 +5216,7 @@ usr/local/bin/peasydial					    peasydial
 usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
+usr/local/bin/peasymag					    peasymag
 usr/local/bin/peasymount				    peasymount
 usr/local/bin/peasymp3					    peasymp3
 usr/local/bin/peasymp3carousel				    peasymp3
@@ -11407,6 +11409,7 @@ usr/share/pixmaps/peasyclock.png			    peasyclock
 usr/share/pixmaps/peasydial.png				    peasydial
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
+usr/share/pixmaps/peasymag.png				    peasymag
 usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasymp3-24.png			    peasymp3
 usr/share/pixmaps/peasymp3.png				    peasymp3
