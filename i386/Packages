@@ -6632,25 +6632,6 @@ SHA256: f3b63bbe6c55eb2efce18ff799f765788122cd217f2ad902bc196226370e9328
 SHA512: 4d537f80be7ad8f240b2b92fd0b693fa1664b50a2b11a5dcf333751ea71f86704c0332ad5176c021c2c8fc7ce0b70cfc32c6960cdc08d3904c610496acb1bb9f
 Description: xhippo-converted-pet-to-deb
 
-Package: samba-tng-rcrsn-0.5-rc1-debdog
-Architecture: i386
-Version: 0.5-rc2
-Priority: optional
-Section: net
-Source: samba
-Maintainer: root
-Installed-Size: 5300
-Depends: libc6, gtkdialog, libreadline6, libncurses5, adduser, gsu
-Recommends: libc6-i686
-Conflicts: samba4-clients, smbclient, samba
-Filename: ./samba-tng-rcrsn-0.5-rc1-debdog_0.5-rc2_i386.deb
-Size: 709776
-MD5sum: 86ab5aa23c8a473b07c47e4f6e60b547
-SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
-SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
-SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
-Description: SMB/CIFS clients for Unix
-
 Package: findnrun-nls
 Architecture: all
 Version: 1.10.6-1
@@ -7069,21 +7050,6 @@ SHA256: f59d65b56687d06fbdb598e18ee7afbe0aa2506e4c506f84e537b35fe3cb194f
 SHA512: a851b29a5d475351324f6e3f2da2f3c0412b662bb846f974a30a2de98503e467ecdbe44d00e8e7909fad2b7702e094c960b2439ac7271dd57d9e8723512404ba
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
-
-Package: samba4-control
-Architecture: all
-Version: 2.2
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: gtkdialog
-Filename: ./samba4-control_2.2_all.deb
-Size: 6742
-MD5sum: 15e7bfc1caf35771d22600174baa8f47
-SHA1: 5c9ede0e6a292c28055ceac8e1f81bbc5c0f8daa
-SHA256: fea7e0966e87c0bffd7be2c617c73d2fcac3efef3c561ee93d3bf1b06ee43720
-SHA512: e0b5b884bebd4835ddff468748ec420c0bfb35e3d98d3a2ac6ca2e2ed7704162714dca0d66e3adcb56b910dfa7f23bf98df94148ff5f3b6583257e39cfad5379
-Description: Samba server control panel
 
 Package: isotools
 Architecture: all
