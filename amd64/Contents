@@ -48,6 +48,7 @@ etc/pwf/interfaces					    PeasyWiFi
 etc/pwf/udhcpc/default.script				    PeasyWiFi
 etc/rc.d/rc.firewall.pfm				    peasyfwmon
 etc/rc.d/rc.network					    PeasyWiFi
+etc/samba/smb.conf.orig					    samba-server-control
 etc/skel/.config/rox.sourceforge.net/MIME-types/application jwmconf,jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwmconf,jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf,jwm-setup
@@ -745,6 +746,7 @@ root/Startup/peasymag_tray				    peasymag
 root/Startup/peasymp3_tray				    peasymp3
 root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
+root/Startup/samba-autostart				    samba-server-control
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwmconf,jwm-setup-dd64,jwm-setup
@@ -5142,6 +5144,7 @@ usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
 usr/local/bin/run-as-user				    run-as-user
 usr/local/bin/run-pure-ftp				    pure-ftpgui
+usr/local/bin/samba-server-control			    samba-server-control
 usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwmconf,jwm-setup
 usr/local/bin/sfs-get					    sfs-get-smokey-get
@@ -8234,6 +8237,7 @@ usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/rox.desktop			    jwmconf
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
 usr/share/applications/rshift.desktop			    redshift-gui-lite
+usr/share/applications/samba-server-control.desktop	    samba-server-control
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
 usr/share/applications/simpleHTTPserver.desktop		    simple-python-http-server
@@ -11317,6 +11321,7 @@ usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
 usr/share/pixmaps/rshift.png				    redshift-gui-lite
+usr/share/pixmaps/samba-server-control.png		    samba-server-control
 usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload

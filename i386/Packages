@@ -843,6 +843,21 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
  Version 1.1.9, added compression option zstd
 
+Package: samba-server-control
+Architecture: all
+Version: 3.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./samba-server-control_3.0_all.deb
+Size: 6642
+MD5sum: 974bc9fe42fe1a06da8d9d154cab524e
+SHA1: afb8137449fc0cc6fb2645d11d0b15011a5421cc
+SHA256: a8c641806d08e3ef7c0d4f10f40059270d4a10997a779d20aba4439f64dacf27
+SHA512: d66418b04ea87f1f95f47530aa6bbb6722466170636a0725582728f9307582a29f98d54a6cfa4b81c562266c9e14825f8e2766a6873f6d164ffa2e7c12c0c190
+Description: Samba server control panel
+
 Package: uextract
 Architecture: i386
 Version: 1.0.1
