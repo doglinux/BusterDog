@@ -2092,6 +2092,7 @@ usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasydvdripper				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
+usr/local/bin/peasymedclip				    peasy-media-clipper
 usr/local/bin/peasymount				    peasymount
 usr/local/bin/peasymp3					    peasymp3
 usr/local/bin/peasymp3carousel				    peasymp3
@@ -5742,6 +5743,7 @@ usr/share/applications/peasydial.desktop		    peasydial
 usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasydvdripper.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
+usr/share/applications/peasymedclip.desktop		    peasy-media-clipper
 usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasymp3.desktop			    peasymp3
 usr/share/applications/peasymp3carousel.desktop		    peasymp3
@@ -10267,6 +10269,7 @@ usr/share/pixmaps/peasyclock.png			    peasyclock
 usr/share/pixmaps/peasydial.png				    peasydial
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
+usr/share/pixmaps/peasymedclip.png			    peasy-media-clipper
 usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasymp3-24.png			    peasymp3
 usr/share/pixmaps/peasymp3.png				    peasymp3
