@@ -800,6 +800,21 @@ Description: mplayer/mplayer2 based video player, minimal build
  This package is not part of Debian. It was created by mpv-build scripts with
  statically linked ffmpeg (not libav) and libass from upstream.
 
+Package: gnetcat
+Architecture: all
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./gnetcat_1.6_all.deb
+Size: 5472
+MD5sum: c06a71c9468fee309c26ef5cc203c1c1
+SHA1: 3e34cf8cfd20d6a34f25a5f4bd6eb341eb5cf5fd
+SHA256: 20d76f08eb39ceb5c7f35c8650d9b5657e9d4a8d4073ef0218fded35af831ec7
+SHA512: 305faac450b3e65a70a30b26a8d7d09ced4397178434065f96a7f98134a7051e68537f240e84a89ee5a926e09359e8fec06fc71172db94c60dfdba418e13ac9b
+Description: File transfer with busybox nc
+
 Package: pmusic
 Architecture: all
 Version: 6.0.0
