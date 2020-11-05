@@ -3664,6 +3664,29 @@ SHA256: fd778f93287adb23a84da100484e47cae07378b7043a73e738057e4478f599e6
 SHA512: c14b42908d2ca70d71c66aae28b0391ad18a246caa2fac3126d1d0dc4d7873ba4584ebe57b0f272351e4c5a1397e2c7a3c1ab2678b3d358dae68f918c397ef64
 Description: Touchpad/mouse/touchscreen setup
 
+Package: youtube-get2
+Architecture: all
+Version: 0.2.1
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.1_all.deb
+Size: 1704144
+MD5sum: 57937cfd4a51587be3378c2c68b9821b
+SHA1: 88100cb37608cc618474dfcb4f103d7fb78a102c
+SHA256: ef65fd9897f1ec1ee2ad13d6f044fb6568969bbf8f5b0de6e71bced5ffab10e2
+SHA512: f2e41435e941590f657f2bf91dfa07f8f1d08986f80ffe8e6a430f123a852d2422045fa7ede71833186c2e6126cc820d969a4d49fc17ffa361632ca6353f8fbf
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - v0.2.1 Speedup waiting time for downloads to be started
+
 Package: peasyprint
 Architecture: all
 Version: 4.2
