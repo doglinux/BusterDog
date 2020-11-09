@@ -1371,6 +1371,8 @@ usr/lib/grub4dos/default				    grub4dosconfig
 usr/lib/grub4dos/grldr					    grub4dosconfig
 usr/lib/grub4dos/wee.mbr				    grub4dosconfig
 usr/lib/gtk-2.0/modules/libgtk2desklet.so		    gtkdesklet
+usr/lib/i386-linux-gnu/libX11-xcb.so.1			    libx11-xcb1
+usr/lib/i386-linux-gnu/libX11-xcb.so.1.0.0		    libx11-xcb1
 usr/lib/i386-linux-gnu/libelogind.so.0			    libelogind0
 usr/lib/i386-linux-gnu/libelogind.so.0.27.0		    libelogind0
 usr/lib/i386-linux-gnu/libsystemd.so.0			    libelogind0
@@ -9028,6 +9030,9 @@ usr/share/doc/libvpx4/AUTHORS.gz			    libvpx4
 usr/share/doc/libvpx4/README.gz				    libvpx4
 usr/share/doc/libvpx4/changelog.Debian.gz		    libvpx4
 usr/share/doc/libvpx4/copyright				    libvpx4
+usr/share/doc/libx11-xcb1/changelog.Debian.gz		    libx11-xcb1
+usr/share/doc/libx11-xcb1/changelog.gz			    libx11-xcb1
+usr/share/doc/libx11-xcb1/copyright			    libx11-xcb1
 usr/share/doc/libx264-122/changelog.Debian.gz		    libx264-122
 usr/share/doc/libx264-122/changelog.gz			    libx264-122
 usr/share/doc/libx264-122/copyright			    libx264-122
