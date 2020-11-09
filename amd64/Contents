@@ -163,6 +163,8 @@ lib/elogind/libelogind-shared-241.3.so			    elogind
 lib/elogind/libelogind-shared-243.7.so			    elogind
 lib/elogind/system-shutdown/.keep_dir			    elogind
 lib/elogind/system-sleep/.keep_dir			    elogind
+lib/i386-linux-gnu/libudev.so.1				    libeudev1
+lib/i386-linux-gnu/libudev.so.1.6.3			    libeudev1
 lib/modprobe.d/fbdev-blacklist.conf			    eudev
 lib/udev/ata_id						    eudev
 lib/udev/cdrom_id					    eudev
@@ -1369,6 +1371,9 @@ usr/lib/grub4dos/default				    grub4dosconfig
 usr/lib/grub4dos/grldr					    grub4dosconfig
 usr/lib/grub4dos/wee.mbr				    grub4dosconfig
 usr/lib/gtk-2.0/modules/libgtk2desklet.so		    gtkdesklet
+usr/lib/i386-linux-gnu/libelogind.so.0			    libelogind0
+usr/lib/i386-linux-gnu/libelogind.so.0.27.0		    libelogind0
+usr/lib/i386-linux-gnu/libsystemd.so.0			    libelogind0
 usr/lib/libbacon.a					    bacon
 usr/lib/libcd.so					    iupluacontrols-stretch-gtk2
 usr/lib/libcdlua53.so					    iupluacontrols-stretch-gtk2
