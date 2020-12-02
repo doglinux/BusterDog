@@ -2091,6 +2091,7 @@ usr/local/bin/ourico					    ourico
 usr/local/bin/p910nd-control				    p910nd-print-server
 usr/local/bin/packit					    pack-it
 usr/local/bin/palettizer				    palettizer
+usr/local/bin/peasy-ytdl				    peasy-ytdl
 usr/local/bin/peasycdplayer				    peasymp3
 usr/local/bin/peasyclock				    peasyclock
 usr/local/bin/peasydial					    peasydial
@@ -2128,6 +2129,7 @@ usr/local/bin/picdrop					    picdrop
 usr/local/bin/picscale					    picdrop
 usr/local/bin/pmusic					    pmusic
 usr/local/bin/pmwget					    pmirrorget
+usr/local/bin/popup-image				    popup-image
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/postergo					    gopoststuff
 usr/local/bin/postergo-sel				    gopoststuff
@@ -5765,6 +5767,7 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/palettizer.desktop		    palettizer
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
+usr/share/applications/peasy-ytdl.desktop		    peasy-ytdl
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasycdplayer.desktop		    peasymp3
 usr/share/applications/peasyclock.desktop		    peasyclock
@@ -10317,6 +10320,7 @@ usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/palettizer.png			    palettizer
 usr/share/pixmaps/partview-24.png			    peasypartview
 usr/share/pixmaps/partview-48.png			    peasypartview
+usr/share/pixmaps/peasy-ytdl.png			    peasy-ytdl
 usr/share/pixmaps/peasyclock.png			    peasyclock
 usr/share/pixmaps/peasydial.png				    peasydial
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
