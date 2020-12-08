@@ -6,24 +6,24 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Wed, 02 Dec 2020 18:23:42 +0000
+Date: Tue, 08 Dec 2020 16:10:33 +0000
 MD5Sum:
  788388d69371c74f929b1e4f37d95e4e           341709 Packages
- 0506122f53e1d53de9312a8a9f227f0a           116478 Packages.gz
- c052b791acc528e4303b75cebbe71dad              186 Release
- 0506122f53e1d53de9312a8a9f227f0a           116478 Translation-en.gz
+ 286e203a773ef564e8da12550090d89e           116478 Packages.gz
+ 0f5dcd57c5910de5c32c63992194ab7c              186 Release
+ 286e203a773ef564e8da12550090d89e           116478 Translation-en.gz
 SHA1:
  dd187806bfb205fbecdfdee0418954892bdf5f38           341709 Packages
- 2b92bd19932a446657328f140fc61c91915c787b           116478 Packages.gz
- c253482668c28cd98dd2e46528b1c6ef29cee8d7              186 Release
- 2b92bd19932a446657328f140fc61c91915c787b           116478 Translation-en.gz
+ 35cb7b77ca1c6eaee8a7ee6b11bb1f499b40d336           116478 Packages.gz
+ 9f9a549781448bb5fbea449f9af6d06bd815c89e              186 Release
+ 35cb7b77ca1c6eaee8a7ee6b11bb1f499b40d336           116478 Translation-en.gz
 SHA256:
  4a84e043c08365c26f39a5e80b3d13f3f3fe9c5f6a57e1c2d502e8e69a7ca0eb           341709 Packages
- c420e633334d430aca0368facc622295e6fca0f5af6e777a9a47fb1693aea18e           116478 Packages.gz
- e27291c80992fafbdc5229f4b34c7cb2f66ccb9d85532c88a07bcaeb5be5c535              186 Release
- c420e633334d430aca0368facc622295e6fca0f5af6e777a9a47fb1693aea18e           116478 Translation-en.gz
+ 2b8d7fb666aa4527a4830e8f3222823562b1c229d6d0e30b1c3a6478332c84b3           116478 Packages.gz
+ eec4316d7c210ef8154357b403d645013ea3bfd22aca1ac4c761f9dd1e387429              186 Release
+ 2b8d7fb666aa4527a4830e8f3222823562b1c229d6d0e30b1c3a6478332c84b3           116478 Translation-en.gz
 SHA512:
  2024120e7b45e8a05533f4dea6252c539d9c7da078fb5ea87eb7329b0acb1c9a2f6aa792fe77ecfe693961abba6890f67cc287d4ebaa19cf1ebb79b69e7ab226           341709 Packages
- 85dfa83a30e81c676de96e27292c56f08085e4b588a40a15fe4e6abe1529c3cd09b88f86403f27c21cc4d87694c21c36f74b515a5227f1b131a837d5b6b89f18           116478 Packages.gz
- 9e8de25d9fc8edee18fb65085c3e47e2ea25accdc6cc8a296ab3a6d488647a9f83f166fda7fc89303f574b789f4abef6f8f38957452c3fba392209ef4a3fd329              186 Release
- 85dfa83a30e81c676de96e27292c56f08085e4b588a40a15fe4e6abe1529c3cd09b88f86403f27c21cc4d87694c21c36f74b515a5227f1b131a837d5b6b89f18           116478 Translation-en.gz
+ df1c5fc72de78bfe20cc6f62bea74760d0d41a0cbac6d8d418122efebea05a11db5da799aaf05022f04a446a158269c6ffb43d4c5fdc23dc65cd52fb22df07fb           116478 Packages.gz
+ 8bc070e8aec1fbb09b23e3dd270559fbac2009263e86be39c61636e38d73f7ba2c119f4d17818aaf37c4f551f941e750e688809a415972af4251b71ab6d54bf9              186 Release
+ df1c5fc72de78bfe20cc6f62bea74760d0d41a0cbac6d8d418122efebea05a11db5da799aaf05022f04a446a158269c6ffb43d4c5fdc23dc65cd52fb22df07fb           116478 Translation-en.gz
