@@ -5297,6 +5297,7 @@ usr/local/bin/jwm-theme-change				    jwm-setup-dd64,jwmconf,jwm-setup
 usr/local/bin/keybind					    openbox-keybinder
 usr/local/bin/keybinder					    openbox-keybinder
 usr/local/bin/loadmodule				    sfsload
+usr/local/bin/loadmodule2				    my-squash-loader
 usr/local/bin/loadmodulegui				    sfsload
 usr/local/bin/loadsfs					    sfsload
 usr/local/bin/loadsfs-fuse				    portablesfs-loadsfs-fuse
@@ -5382,6 +5383,7 @@ usr/local/bin/remastercow-start				    remaster-scripts
 usr/local/bin/remasterdog				    remaster-scripts
 usr/local/bin/remasterdog-cli				    remaster-scripts
 usr/local/bin/remasterdog-start				    remaster-scripts
+usr/local/bin/remove-broken-links			    my-squash-loader
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
 usr/local/bin/run-as-user				    run-as-user

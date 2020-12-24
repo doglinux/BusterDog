@@ -4281,6 +4281,19 @@ SHA256: 186c1d3737336f9a399f3015d190caec99e3de7648f167ff195cadba138acfc1
 SHA512: 1dbefd9c53020f9417c06a961a00a5274c5d89ef9f4adabd3b9503eb1efb2337e097ddacc18ffad37ac4f8ea07f669760247821b3af8beb45a890bc60d4555df
 Description: Load squashfs modules on-the-fly
 
+Package: my-squash-loader
+Architecture: amd64
+Version: 2.1
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./my-squash-loader_2.1_amd64.deb
+Size: 8768
+MD5sum: 6c6ceb5a9f88ac564b4bfc5d556b71dd
+SHA1: 141b4cae253523c8ab63ec48ae49af663e9831ea
+SHA256: f20a546750e740998031a4aabdcf8312031e49c7b7832036d097e0ef50c0332f
+SHA512: 9f2ad9a67b553782738856fc82000b9fe2534afbf0755f3e6fdc554c02ad074c40c455a2d84c8f65329fa2c07476cf21a841eb85e54bcd1e88a16250e0cb164d
+Description: Load squashfs modules on-the-fly
+
 Package: notecase
 Architecture: amd64
 Version: 1.9.8
