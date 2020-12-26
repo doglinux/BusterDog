@@ -5055,6 +5055,21 @@ SHA256: ba0e28a8a7f1bdc28690900f241731d5d12705d260587a96985844464edb6fa2
 SHA512: adbd06986f7d93e6c61ae38b07ac1b8f5e1a877f70efb553297b58a650ada34d5f7826d3d8ab4fa14cf250ba2aa2c07ada173e71c793f4b5ec8077f749f6ae75
 Description: Network port scanner
 
+Package: peasyport
+Architecture: amd64
+Version: 3.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan, nbtscan
+Filename: ./peasyport_3.2_amd64.deb
+Size: 11372
+MD5sum: 563075d37b9839bd9cff39ef0f2bb56d
+SHA1: b89399aa56699196e2500615fb9b746c444f8000
+SHA256: 94c31f8ed4ce2b4eab4f76b0136f326e5da70d9b5532f9da06945a535e1c5209
+SHA512: ca50cc120ea3daa0970a70c099720637aa39d631a6606ea68b102b076d454b29e721c5f1dab33f3fbfc146d4fc7feb0cc333bda51512be5271210537e92d68e6
+Description: Network port scanner
+
 Package: peasyprint
 Architecture: all
 Version: 2.9-1
