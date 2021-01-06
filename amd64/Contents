@@ -776,6 +776,8 @@ opt/tmp/snapmergepuppy					    porteusbootscripts
 opt/tmp/wmpoweroff					    porteusbootscripts
 opt/tmp/wmreboot					    porteusbootscripts
 root/.asoundrc						    peasymp3
+root/.asoundrc.base					    trx-buster
+root/.asoundrc.trx					    trx-buster
 root/.config/Code Industry/Master PDF Editor.conf	    master-pdf-editor
 root/.config/rox.sourceforge.net/MIME-types/application	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwm-setup,jwmconf
@@ -5407,6 +5409,13 @@ usr/local/bin/tkagif					    takeagif
 usr/local/bin/touchpad					    touchpad
 usr/local/bin/trans					    trans-tray
 usr/local/bin/trans_tray				    trans-tray
+usr/local/bin/trx-rx					    trx-buster
+usr/local/bin/trx-rx-mcast				    trx-buster
+usr/local/bin/trx-rx-start				    trx-buster
+usr/local/bin/trx-rx-stop				    trx-buster
+usr/local/bin/trx-tx					    trx-buster
+usr/local/bin/trx-tx-start				    trx-buster
+usr/local/bin/trx-tx-stop				    trx-buster
 usr/local/bin/txt2svg					    txt2svg
 usr/local/bin/tzupdate.py				    tzupdate
 usr/local/bin/uextract					    uextract
