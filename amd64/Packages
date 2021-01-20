@@ -6815,6 +6815,21 @@ Description: MIDI to WAV converter
 
 Package: touchpad
 Architecture: all
+Version: 1.10
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.10_all.deb
+Size: 6546
+MD5sum: 7a8075c603567afc224cf090b2554020
+SHA1: dd4914fed0118dada3dce2b98c29ca4821fb3185
+SHA256: 09584c927956e9c40fdf7de98488360ff2917028fdf6221993f5a64a36d73880
+SHA512: 434df83200852d78a7f15127a9a4e983ff8509a23c44ffd299a18ab300851d40012218dfc1a9f5277af86652f41e88324a58ef0ab69365cd810896b49458a4e9
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
 Version: 1.7
 Priority: optional
 Section: base
