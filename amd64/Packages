@@ -7251,6 +7251,23 @@ SHA512: c63157421ae6fbe88de0c9fa03e1665f4b056d789a39ff6c69c7f130f04b9b0ef674c678
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
 
+Package: upgrade-kernel
+Architecture: all
+Version: 1.3.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, live-boot, live-tools
+Filename: ./upgrade-kernel_1.3.0_all.deb
+Size: 1038044
+MD5sum: 4eb426b08bbaf91c4c2d383ccffe923b
+SHA1: 78ca86475fb265be72dae9d8d01c608973964795
+SHA256: 9a126552dce3a0b3e7d076b1ef8d4322d7b9158300822a7dc12f35a3a3bbb062
+SHA512: 0fd6649f44113a7ff46c35143809b0d6c7f11b88516fdeb8889fd706f0d15119ae157095b9099e2b4e7bdb781fbb3e7cae7083faa0baf6753c363392a2d061ec
+Description: Install kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: vnstat-tray
 Architecture: amd64
 Version: 1.1
