@@ -101,6 +101,21 @@ SHA256: 50051ae063981a3d1f120c250391d0a419984310241cb17d80f49a79fc8fc59c
 SHA512: 18c2a1759a9e23129f25012e9598c7f3abae67a9545455619211a910913ca130198890fdf87847861bf32268f49ef406ff1839d7142785235539e1348b207edd
 Description: converts mp3/ogg/wav/flac/webm files
 
+Package: audio-converter
+Architecture: all
+Version: 1.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame, vorbis-tools, flac
+Filename: ./audio-converter_1.7_all.deb
+Size: 6204
+MD5sum: dc868192d538f6d8182919c7742adb30
+SHA1: 5ccc22a42dae6ba0b4e1d6db9d108bcabafc52ca
+SHA256: dc83685689a21722528bca7417bcb4610d1dc848da9b85639c7c7fd709f68c72
+SHA512: 74ccdc56b0175119d74f3e34fa4f9e94179810389c45739908f17b58bc221cd2d3f81f630cd3d71fbcf5b439a0e9f1a0e39dd4dcc24c300649e4f0d17f87d14b
+Description: converts mp3/ogg/wav/flac/webm/aac files
+
 Package: aufs-dkms
 Architecture: i386
 Version: 4.19+20190103-1
@@ -4273,6 +4288,20 @@ SHA1: d4c542c1621dec517d5bef260d745fe84533262d
 SHA256: 946a3fa9b320e1f68f6716c4d656971b60c728e0c42fe09a6f29ffb6da9823bb
 SHA512: b241e93cafa8010183b09f17c758c04a9a5c4638b9a64e1f0c9bbabfbdfef232c76f5f9914543becd4da1df660c3ad92d1dbd3c964a4384b36d6afa58ca2de98
 Description: Markdown to HTML converter
+
+Package: media-file-joiner
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Filename: ./media-file-joiner_1.0_all.deb
+Size: 4922
+MD5sum: 63bd7b64650ff0d45be45dfd0646e334
+SHA1: bf65413a6ddb25765a395ab9f14d8ff2997f307f
+SHA256: cad578b4b96d55e5a993564cb80120f50da81a537f5edd3b6061aefbde5c44e2
+SHA512: 42c869660ba97c31e0f1e4b47132b3a8d16f92dddde744221f6f59d6451e0e317a24a82fd7970a5ca564bd5741196a735882742f7969acb8df65f8f26edf4994
+Description: Joins media files
 
 Package: midori
 Architecture: i386
