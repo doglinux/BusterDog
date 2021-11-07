@@ -9127,6 +9127,37 @@ Description: YouTube Downloader, frontend for youtube-dl
  - v1.5.1 Using youtube-dl now rather than youtube-dlc 
  -v1.5.2, fixes for display for yad gtk3 linked, and more
 
+Package: youtube-get3
+Architecture: all
+Version: 1.5.3
+Maintainer: fredx181
+Installed-Size: 1938
+Depends: libc6, yad, sed, wget, python3, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.3_all.deb
+Size: 2139696
+MD5sum: 741d527f314e533614f17044c777da06
+SHA1: ae88ef0774467105ffe00dcaa2424d8e8b3afa0d
+SHA256: 7be365faa32be10957228b58f607ba787fc929fe1c7b7a88e60472597c16dcca
+SHA512: 1482ce3c53d64b2209b0fa076704e952f193fc174085ad8681f239806cfa9a61a7c168aef4c2e5bef9ad598b9dc3401f22e4ff45328b1d19e536c6d398370c53
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+
 Package: youtube-get
 Architecture: i386
 Version: 0.1.1
