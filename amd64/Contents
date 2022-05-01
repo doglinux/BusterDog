@@ -934,7 +934,7 @@ root/.local/share/applications/run-as-user.desktop	    run-as-user
 root/.local/share/applications/synaptic.desktop		    jwm-setup-dd64
 root/.local/share/applications/vlc.desktop		    run-as-user
 root/.local/share/file-manager/actions/packit.desktop	    pack-it
-root/.mplayer/config					    gmplayer
+root/.mplayer/config					    gmplayer,gnome-mplayer-1.0.6
 root/.xhippo/gtkrc					    xhippo
 root/.xhippo/playlists/0default.d.xplist		    xhippo
 root/.xhippo/playlists/0default.d/Bulgaria_BNR1_horizont_low.mp3.m3u xhippo

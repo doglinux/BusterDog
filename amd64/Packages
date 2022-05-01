@@ -367,6 +367,19 @@ SHA256: 486c4bf36cc848349ce6640a91d84babe6732d64fc52c159ce51a5e695fc8649
 SHA512: b92f008b0fa84868d6d027a7abcc7898b53f9cc6d904c32338e3f2279c1a4d08ac3ef860ea52a70e324432e663a14099c4b9968631d4509ef4f6a5c143792142
 Description: Edits media files
 
+Package: av-editor
+Architecture: all
+Version: 2.5
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./av-editor_2.5_all.deb
+Size: 9390
+MD5sum: 83e7b1832d375d06ab77ebed5d791212
+SHA1: 3f2520513152b570878681c4a1545c637e60e2a6
+SHA256: b8770298b9ca0108f9abb937b5499525d6fede80aaf7a686f2bbcbcd34ee0664
+SHA512: 00fad29cfc1e3fe93362ab853a3e22bcd578919d6a6153df612796861b6b8a51bac52c4d12fbc78cc7f112025fac8ae743282ff7818c1e2ca5d7cae98ae8112a
+Description: Edits media files
+
 Package: azpainter
 Architecture: amd64
 Version: 2.1.1
@@ -2236,6 +2249,37 @@ MD5sum: d9eb3fbdbd3f48086e676cb13a7133eb
 SHA1: c5e338043073d6f0ab4371baf5b40f16646dc174
 SHA256: 5d60a57fcc5655814635f37749e8697d1ab5c9e9ae7486d228177408618dc9d1
 SHA512: b103a089141ebf912c8979f7eeb859c0d98b4230c7fd69bf023e0464bbdd1efe8d4320d262154d70c0ee87947e4d10baf99b2b8e0ff600a2da4d24044baed701
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
+
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.9-2
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk2.0-0, libnotify4, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, gconf-service, libgconf-2-4, libbz2-1.0, libcdparanoia0, libdv4, libfaac0, libfribidi0, libgl1, libjack-jackd2-0, libmad0, libmng1, libmp3lame0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libsdl1.2debian, libtheora0, libxext6, libxinerama1, libxss1, libxv1, libxvidcore4, libxxf86dga1, libgmlib0, libjpeg8, libx264-122, libxcb-randr0, libgif4, libpng12-0, libvpx1
+Suggests: gecko-mediaplayer
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Filename: ./gnome-mplayer-1.0.6_1.0.9-2_amd64.deb
+Size: 3349020
+MD5sum: fbb3a92da6be49680d46ebe2a8843f65
+SHA1: 1e971dfb9ee379ac4c458173d72c525bd4ab8695
+SHA256: 3b5f8a4dc66cd2f677097ad15bbb685af1a8f68648ca179c5412b8a41cb11fcc
+SHA512: 0535bfe0321ca5c6cded0f8d8c52c34dabf6e67e170ecc7cc591e61b1a3177a027985ccb555f00bbaddd7210a47e60555b61f8f8257c5c4e00f66a44742ae612
 Homepage: http://code.google.com/p/gnome-mplayer
 Description: GTK+ interface for MPlayer
  The power of MPlayer combined with a friendly interface for your desktop.
@@ -6873,6 +6917,22 @@ SHA256: 449326764d7ab06bce800e532099232b35556c9a991688dc8550b7d84a1ba82a
 SHA512: 97e4b3b8698b2038f7accf1d8883de09e7fa953648a7c35e9d17b924ab21820d00d7d00f22db68d625c3d76d95613419dbaff03d2b35d772f214b880b92f1382
 Description: Screensaver Gui
 
+Package: screener
+Architecture: amd64
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 60
+Depends: yad, libc6, xautolock, xlockmore
+Filename: ./screener_1.0.2_amd64.deb
+Size: 14648
+MD5sum: 4c1fed293e668edc7e15326a54b7d00c
+SHA1: 18770c9bf5932502c4d941723cd15f1f05b6002b
+SHA256: e24588ccf3424fa1eada83284cc39b42a418f94d60e3dd63704b2341e7d8a020
+SHA512: efa485fe1b9deadc9fb28119964b482020d4cd358816f205b68ce998626c1131f1099d9b695846635e77ff9495d5198aafa3e7de96f5c5decea17bf8579652f8
+Description: Screensaver Gui
+
 Package: scrotdlg
 Architecture: amd64
 Version: 1.0.0
@@ -8278,6 +8338,22 @@ MD5sum: bcb5fe420db9325f9519cd6c9d8a351b
 SHA1: 702e8caff00b5738c92f707130c392e563f3a4fc
 SHA256: 79b3bbdb61dc8cb75d9e740dd09f1035cc6f4258aa611646bfc6c6a5d30ceca6
 SHA512: c1de3ba127e9baaf88f0b39cea37063e1b80f0f8efd93cf2dba4181652b5910f1f31c999983e970e7f8e55cf3292094439ceb0308174a72e85dca95d836ddaa1
+Description: Screensaver
+
+Package: xlockmore
+Architecture: amd64
+Version: 5.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 3500
+Depends: yad, libc6, libglu1-mesa
+Filename: ./xlockmore_5.61_amd64.deb
+Size: 1096900
+MD5sum: 5b568d877ddb95662f81eebb56eb3007
+SHA1: 8bdf6cd67d4c571de31b5e129be5c682bcd79df5
+SHA256: a69df25463338b256eb269b39a0f49d77efa163e4d85f07b38064cdf59cb0a5d
+SHA512: 7cf73bad5dd0f24efb34fdbdb2a3587c41b13155ae323421062e46bc8c1a56d2fd83b5a3dd8328482f20c316e665c1b8ede6bc7fc15c034540128149f3b783cc
 Description: Screensaver
 
 Package: xlunch

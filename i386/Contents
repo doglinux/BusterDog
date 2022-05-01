@@ -801,7 +801,7 @@ root/.local/share/applications/run-as-user.desktop	    run-as-user
 root/.local/share/applications/vlc.desktop		    run-as-user
 root/.local/share/file-manager/actions/packit.desktop	    pack-it
 root/.motion/motion.conf				    motion-light
-root/.mplayer/config					    gmplayer
+root/.mplayer/config					    gmplayer,gnome-mplayer-1.0.7
 root/.notecase/notecase.ini				    notecase-portable
 root/.ouricorc						    ourico
 root/.xhippo/gtkrc					    xhippo

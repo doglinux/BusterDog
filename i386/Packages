@@ -355,6 +355,19 @@ SHA256: 486c4bf36cc848349ce6640a91d84babe6732d64fc52c159ce51a5e695fc8649
 SHA512: b92f008b0fa84868d6d027a7abcc7898b53f9cc6d904c32338e3f2279c1a4d08ac3ef860ea52a70e324432e663a14099c4b9968631d4509ef4f6a5c143792142
 Description: Edits media files
 
+Package: av-editor
+Architecture: all
+Version: 2.5
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./av-editor_2.5_all.deb
+Size: 9390
+MD5sum: 83e7b1832d375d06ab77ebed5d791212
+SHA1: 3f2520513152b570878681c4a1545c637e60e2a6
+SHA256: b8770298b9ca0108f9abb937b5499525d6fede80aaf7a686f2bbcbcd34ee0664
+SHA512: 00fad29cfc1e3fe93362ab853a3e22bcd578919d6a6153df612796861b6b8a51bac52c4d12fbc78cc7f112025fac8ae743282ff7818c1e2ca5d7cae98ae8112a
+Description: Edits media files
+
 Package: azpainter
 Architecture: i386
 Version: 2.1.1
@@ -2364,6 +2377,24 @@ MD5sum: b364ee9caef2c4c7c3b1b2f83a2841eb
 SHA1: fa3deb8f400a6a0188aef031a63338bae3f0fc33
 SHA256: 4798de01c1ff33fa9904dc5ce8a46ae36ed9853a8ac5e4bad7c9c0c907e6f88a
 SHA512: 632cfdc89593f0a7605f7e0e2456eeaef434feb776a86038011586eddb997bc21130b908ddadfeac49ee5fbedab8e7b09b53c97f4df2798e6228357cced6b04d
+Description: Media player small version for DebianDog
+
+Package: gnome-mplayer-1.0.7
+Architecture: i386
+Version: 1:1.0.6.5
+Priority: extra
+Section: system
+Maintainer: root@wheezy
+Installed-Size: 9500
+Depends: dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmusicbrainz3-6, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, liba52-0.7.4, libdvdread4, libenca0, libfaad2, libfribidi0, libogg0, libpng12-0, libtheora0, libvorbis0a, libxext6, libxinerama1, libxv1, libxvidcore4, libcdio-paranoia1, libssl1.0.2, libcurl4
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Filename: ./gnome-mplayer-1.0.7_1.0.6.5_i386.deb
+Size: 3829744
+MD5sum: 230461aeb25f22886f2d81d286b2e2e4
+SHA1: 13dc33e46e0fff13da9d2f7fbddd2f4c02c4f84f
+SHA256: c7d31e8b01e1813d3f3247b2470e8bac45daef98d73108bd3f0507fd22e277a9
+SHA512: aded5256e7d52144bc18a2f954df24ddb26695db3fa58b3d23819ed2d6747cd7c2871f7eed62a5f48143913a61f3d9658f148bf9ce389075062fd0b8a922c580
 Description: Media player small version for DebianDog
 
 Package: googledrivegui2
